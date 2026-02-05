@@ -12,17 +12,16 @@
 
     <header>
         <h2>Education Data Dashboard</h2>
-        <p>This project demonstrates my ability to design and implement a data-driven user interface using pure HTML,
-            CSS, and JavaScript without relying on external frameworks.</p>
-
-        <p>dashboard consumes structured JSON data and dynamically renders key performance indicators, tabular
-            data, and a custom-built chart using the HTML Canvas API. The focus was on clean separation of concerns,
-            readable code structure, and efficient DOM manipulation.</p>
-
-        <p>While the current implementation uses mock data, the architecture mirrors real-world dashboards and can be
-            easily extended to consume live APIs, support filtering, or scale to larger datasets. This project
-            highlights my understanding of front-end fundamentals, data visualization principles, and maintainable
-            JavaScript design.</p>
+        <p>
+            This project demonstrates my ability to design and implement a data-driven
+            user interface using pure HTML, CSS, and JavaScript without relying on
+            external frameworks.
+        </p>
+        <p>
+            The dashboard consumes structured JSON data and dynamically renders key
+            performance indicators, tabular data, and a custom-built chart using the
+            HTML Canvas API.
+        </p>
     </header>
 
     <section class="metrics">
@@ -67,6 +66,12 @@
             </thead>
             <tbody id="tableBody"></tbody>
         </table>
+    </section>
+
+    <section class="pagination">
+        <button id="prevPage">Previous</button>
+        <span id="pageInfo"></span>
+        <button id="nextPage">Next</button>
     </section>
 
     <section class="chart-section">

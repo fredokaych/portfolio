@@ -1,6 +1,8 @@
 const state = {
     rawData: [],
-    filteredData: []
+    filteredData: [],
+    currentPage: 1,
+    pageSize: 10
 };
 
 const tableBody = document.getElementById("tableBody");
@@ -11,6 +13,10 @@ const searchInput = document.getElementById("searchInput");
 const totalSchoolsEl = document.getElementById("totalSchools");
 const avgScoreEl = document.getElementById("avgScore");
 const totalEnrollmentEl = document.getElementById("totalEnrollment");
+
+const prevPageBtn = document.getElementById("prevPage");
+const nextPageBtn = document.getElementById("nextPage");
+const pageInfoEl = document.getElementById("pageInfo");
 
 const canvas = document.getElementById("chartCanvas");
 const ctx = canvas.getContext("2d");
@@ -46,6 +52,8 @@ function applyFilters() {
         );
     });
 
+    state.currentPage = 1;
+
     renderTable();
     renderMetrics();
     renderChart();
@@ -53,17 +61,34 @@ function applyFilters() {
 
 function renderTable() {
     tableBody.innerHTML = "";
-    state.filteredData.forEach(d => {
+
+    const start = (state.currentPage - 1) * state.pageSize;
+    const end = start + state.pageSize;
+    const pageData = state.filteredData.slice(start, end);
+
+    pageData.forEach(d => {
         const row = document.createElement("tr");
         row.innerHTML = `
-      <td>${d.school}</td>
-      <td>${d.county}</td>
-      <td>${d.level}</td>
-      <td>${d.enrollment}</td>
-      <td>${d.mean_score}</td>
-    `;
+            <td>${d.school}</td>
+            <td>${d.county}</td>
+            <td>${d.level}</td>
+            <td>${d.enrollment}</td>
+            <td>${d.mean_score}</td>
+        `;
         tableBody.appendChild(row);
     });
+
+    renderPaginationControls();
+}
+
+function renderPaginationControls() {
+    const totalPages =
+        Math.ceil(state.filteredData.length / state.pageSize) || 1;
+
+    pageInfoEl.textContent = `Page ${state.currentPage} of ${totalPages}`;
+
+    prevPageBtn.disabled = state.currentPage === 1;
+    nextPageBtn.disabled = state.currentPage === totalPages;
 }
 
 function renderMetrics() {
@@ -101,11 +126,33 @@ function renderChart() {
     counties.forEach((c, i) => {
         const height = (values[i] / maxVal) * 200;
         ctx.fillStyle = "#3b82f6";
-        ctx.fillRect(80 + i * (barWidth + gap), 250 - height, barWidth, height);
+        ctx.fillRect(
+            80 + i * (barWidth + gap),
+            250 - height,
+            barWidth,
+            height
+        );
         ctx.fillStyle = "#f8fafc";
         ctx.fillText(c, 80 + i * (barWidth + gap), 270);
     });
 }
+
+prevPageBtn.addEventListener("click", () => {
+    if (state.currentPage > 1) {
+        state.currentPage--;
+        renderTable();
+    }
+});
+
+nextPageBtn.addEventListener("click", () => {
+    const totalPages = Math.ceil(
+        state.filteredData.length / state.pageSize
+    );
+    if (state.currentPage < totalPages) {
+        state.currentPage++;
+        renderTable();
+    }
+});
 
 [countyFilter, levelFilter, searchInput].forEach(el =>
     el.addEventListener("input", applyFilters)
