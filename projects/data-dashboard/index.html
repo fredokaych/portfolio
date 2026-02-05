@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Education Data Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <header>
+        <h1>Education Data Dashboard</h1>
+        <p>Interactive analysis of school performance data</p>
+    </header>
+
+    <section class="metrics">
+        <div class="metric-card">
+            <h3>Total Schools</h3>
+            <span id="totalSchools">–</span>
+        </div>
+        <div class="metric-card">
+            <h3>Average Score</h3>
+            <span id="avgScore">–</span>
+        </div>
+        <div class="metric-card">
+            <h3>Total Enrollment</h3>
+            <span id="totalEnrollment">–</span>
+        </div>
+    </section>
+
+    <section class="controls">
+        <select id="countyFilter">
+            <option value="all">All Counties</option>
+        </select>
+
+        <select id="levelFilter">
+            <option value="all">All Levels</option>
+            <option value="Primary">Primary</option>
+            <option value="Secondary">Secondary</option>
+        </select>
+
+        <input type="text" id="searchInput" placeholder="Search school name..." />
+    </section>
+
+    <section class="table-section">
+        <table>
+            <thead>
+                <tr>
+                    <th>School</th>
+                    <th>County</th>
+                    <th>Level</th>
+                    <th>Enrollment</th>
+                    <th>Mean Score</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody"></tbody>
+        </table>
+    </section>
+
+    <section class="chart-section">
+        <h2>Average Score by County</h2>
+        <canvas id="chartCanvas" width="600" height="300"></canvas>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
