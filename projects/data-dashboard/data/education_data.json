@@ -1,50 +1,4002 @@
 [
     {
-        "school": "Wiga Secondary School",
-        "county": "Migori",
+        "school": "Voi Primary School",
+        "county": "Taita Taveta",
+        "level": "Primary",
+        "enrollment": 751,
+        "mean_score": 5.6,
+        "year": 2023
+    },
+    {
+        "school": "Likoni Primary School",
+        "county": "Mombasa",
+        "level": "Primary",
+        "enrollment": 614,
+        "mean_score": 5.6,
+        "year": 2023
+    },
+    {
+        "school": "Maranda High School",
+        "county": "Siaya",
         "level": "Secondary",
-        "enrollment": 620,
-        "mean_score": 6.8,
+        "enrollment": 496,
+        "mean_score": 8.8,
+        "year": 2023
+    },
+    {
+        "school": "Bungoma Township Primary School",
+        "county": "Bungoma",
+        "level": "Primary",
+        "enrollment": 447,
+        "mean_score": 7.7,
+        "year": 2023
+    },
+    {
+        "school": "Kabarnet High School",
+        "county": "Baringo",
+        "level": "Secondary",
+        "enrollment": 1293,
+        "mean_score": 5.9,
+        "year": 2023
+    },
+    {
+        "school": "Moi Primary School Kasarani",
+        "county": "Nairobi",
+        "level": "Primary",
+        "enrollment": 432,
+        "mean_score": 5.4,
+        "year": 2023
+    },
+    {
+        "school": "Kehancha Primary School",
+        "county": "Migori",
+        "level": "Primary",
+        "enrollment": 306,
+        "mean_score": 6.0,
+        "year": 2023
+    },
+    {
+        "school": "Nairobi School",
+        "county": "Nairobi",
+        "level": "Secondary",
+        "enrollment": 1818,
+        "mean_score": 7.3,
+        "year": 2023
+    },
+    {
+        "school": "Habaswein Primary School",
+        "county": "Wajir",
+        "level": "Primary",
+        "enrollment": 672,
+        "mean_score": 8.5,
+        "year": 2023
+    },
+    {
+        "school": "Mandera Secondary School",
+        "county": "Mandera",
+        "level": "Secondary",
+        "enrollment": 1584,
+        "mean_score": 8.9,
+        "year": 2023
+    },
+    {
+        "school": "Isiolo Boys High School",
+        "county": "Isiolo",
+        "level": "Secondary",
+        "enrollment": 798,
+        "mean_score": 6.5,
+        "year": 2023
+    },
+    {
+        "school": "Kabarnet High School",
+        "county": "Baringo",
+        "level": "Secondary",
+        "enrollment": 822,
+        "mean_score": 9.0,
+        "year": 2023
+    },
+    {
+        "school": "Kitui Central Primary School",
+        "county": "Kitui",
+        "level": "Primary",
+        "enrollment": 282,
+        "mean_score": 6.2,
+        "year": 2023
+    },
+    {
+        "school": "Moi Primary School Kasarani",
+        "county": "Nairobi",
+        "level": "Primary",
+        "enrollment": 696,
+        "mean_score": 6.9,
+        "year": 2023
+    },
+    {
+        "school": "Olympic Primary School",
+        "county": "Nairobi",
+        "level": "Primary",
+        "enrollment": 403,
+        "mean_score": 5.2,
+        "year": 2023
+    },
+    {
+        "school": "Maseno School",
+        "county": "Kisumu",
+        "level": "Secondary",
+        "enrollment": 1325,
+        "mean_score": 7.9,
+        "year": 2023
+    },
+    {
+        "school": "Maranda High School",
+        "county": "Siaya",
+        "level": "Secondary",
+        "enrollment": 353,
+        "mean_score": 5.9,
+        "year": 2023
+    },
+    {
+        "school": "Busia Primary School",
+        "county": "Busia",
+        "level": "Primary",
+        "enrollment": 483,
+        "mean_score": 5.0,
+        "year": 2023
+    },
+    {
+        "school": "Maseno School",
+        "county": "Kisumu",
+        "level": "Secondary",
+        "enrollment": 1075,
+        "mean_score": 5.1,
+        "year": 2023
+    },
+    {
+        "school": "Nyeri Township Primary School",
+        "county": "Nyeri",
+        "level": "Primary",
+        "enrollment": 844,
+        "mean_score": 9.2,
+        "year": 2023
+    },
+    {
+        "school": "Moi Primary School Kasarani",
+        "county": "Nairobi",
+        "level": "Primary",
+        "enrollment": 539,
+        "mean_score": 8.5,
+        "year": 2023
+    },
+    {
+        "school": "Olympic Primary School",
+        "county": "Nairobi",
+        "level": "Primary",
+        "enrollment": 694,
+        "mean_score": 7.4,
+        "year": 2023
+    },
+    {
+        "school": "Mang'u High School",
+        "county": "Kiambu",
+        "level": "Secondary",
+        "enrollment": 947,
+        "mean_score": 5.4,
+        "year": 2023
+    },
+    {
+        "school": "Homa Bay Primary School",
+        "county": "Homa Bay",
+        "level": "Primary",
+        "enrollment": 547,
+        "mean_score": 5.1,
+        "year": 2023
+    },
+    {
+        "school": "Meru Town Primary School",
+        "county": "Meru",
+        "level": "Primary",
+        "enrollment": 654,
+        "mean_score": 8.9,
+        "year": 2023
+    },
+    {
+        "school": "Olympic Primary School",
+        "county": "Nairobi",
+        "level": "Primary",
+        "enrollment": 682,
+        "mean_score": 9.5,
+        "year": 2023
+    },
+    {
+        "school": "Maranda High School",
+        "county": "Siaya",
+        "level": "Secondary",
+        "enrollment": 1868,
+        "mean_score": 5.9,
+        "year": 2023
+    },
+    {
+        "school": "Mang'u High School",
+        "county": "Kiambu",
+        "level": "Secondary",
+        "enrollment": 580,
+        "mean_score": 9.1,
+        "year": 2023
+    },
+    {
+        "school": "Alliance High School",
+        "county": "Kiambu",
+        "level": "Secondary",
+        "enrollment": 763,
+        "mean_score": 7.8,
+        "year": 2023
+    },
+    {
+        "school": "Olympic Primary School",
+        "county": "Nairobi",
+        "level": "Primary",
+        "enrollment": 506,
+        "mean_score": 6.1,
+        "year": 2023
+    },
+    {
+        "school": "Migori Primary School",
+        "county": "Migori",
+        "level": "Primary",
+        "enrollment": 737,
+        "mean_score": 5.3,
+        "year": 2023
+    },
+    {
+        "school": "Kisumu Boys High School",
+        "county": "Kisumu",
+        "level": "Secondary",
+        "enrollment": 1585,
+        "mean_score": 6.7,
+        "year": 2023
+    },
+    {
+        "school": "Mang'u High School",
+        "county": "Kiambu",
+        "level": "Secondary",
+        "enrollment": 1955,
+        "mean_score": 6.9,
+        "year": 2023
+    },
+    {
+        "school": "Westlands Primary School",
+        "county": "Nairobi",
+        "level": "Primary",
+        "enrollment": 864,
+        "mean_score": 5.3,
+        "year": 2023
+    },
+    {
+        "school": "Nyeri Township Primary School",
+        "county": "Nyeri",
+        "level": "Primary",
+        "enrollment": 757,
+        "mean_score": 6.9,
+        "year": 2023
+    },
+    {
+        "school": "Nyeri Township Primary School",
+        "county": "Nyeri",
+        "level": "Primary",
+        "enrollment": 501,
+        "mean_score": 5.7,
+        "year": 2023
+    },
+    {
+        "school": "Maseno School",
+        "county": "Kisumu",
+        "level": "Secondary",
+        "enrollment": 1800,
+        "mean_score": 8.3,
+        "year": 2023
+    },
+    {
+        "school": "Nairobi School",
+        "county": "Nairobi",
+        "level": "Secondary",
+        "enrollment": 801,
+        "mean_score": 7.5,
+        "year": 2023
+    },
+    {
+        "school": "Migori Primary School",
+        "county": "Migori",
+        "level": "Primary",
+        "enrollment": 524,
+        "mean_score": 7.9,
+        "year": 2023
+    },
+    {
+        "school": "Mang'u High School",
+        "county": "Kiambu",
+        "level": "Secondary",
+        "enrollment": 722,
+        "mean_score": 5.5,
+        "year": 2023
+    },
+    {
+        "school": "Garissa High School",
+        "county": "Garissa",
+        "level": "Secondary",
+        "enrollment": 1614,
+        "mean_score": 5.0,
         "year": 2023
     },
     {
         "school": "Raha Primary School",
         "county": "Migori",
         "level": "Primary",
-        "enrollment": 480,
-        "mean_score": 7.2,
+        "enrollment": 476,
+        "mean_score": 9.5,
         "year": 2023
     },
     {
-        "school": "Nyatike Girls High",
-        "county": "Migori",
+        "school": "Busia Primary School",
+        "county": "Busia",
+        "level": "Primary",
+        "enrollment": 617,
+        "mean_score": 6.1,
+        "year": 2023
+    },
+    {
+        "school": "Alliance Girls High School",
+        "county": "Kiambu",
         "level": "Secondary",
-        "enrollment": 540,
+        "enrollment": 1442,
         "mean_score": 8.1,
         "year": 2023
     },
     {
-        "school": "Kehancha Primary",
-        "county": "Migori",
-        "level": "Primary",
-        "enrollment": 390,
-        "mean_score": 6.4,
+        "school": "Maseno School",
+        "county": "Kisumu",
+        "level": "Secondary",
+        "enrollment": 726,
+        "mean_score": 6.0,
         "year": 2023
     },
     {
-        "school": "St. Kevin Hill Schools",
-        "county": "Mombasa",
+        "school": "Alliance High School",
+        "county": "Kiambu",
         "level": "Secondary",
-        "enrollment": 710,
+        "enrollment": 492,
+        "mean_score": 9.2,
+        "year": 2023
+    },
+    {
+        "school": "Friends School Kamusinga",
+        "county": "Bungoma",
+        "level": "Secondary",
+        "enrollment": 1451,
+        "mean_score": 7.0,
+        "year": 2023
+    },
+    {
+        "school": "St. Mary's School, Nairobi",
+        "county": "Nairobi",
+        "level": "Secondary",
+        "enrollment": 1594,
+        "mean_score": 5.1,
+        "year": 2023
+    },
+    {
+        "school": "Migori Primary School",
+        "county": "Migori",
+        "level": "Primary",
+        "enrollment": 796,
+        "mean_score": 6.7,
+        "year": 2023
+    },
+    {
+        "school": "Moi Primary School Kasarani",
+        "county": "Nairobi",
+        "level": "Primary",
+        "enrollment": 225,
+        "mean_score": 7.8,
+        "year": 2023
+    },
+    {
+        "school": "Homa Bay Primary School",
+        "county": "Homa Bay",
+        "level": "Primary",
+        "enrollment": 668,
+        "mean_score": 9.2,
+        "year": 2023
+    },
+    {
+        "school": "Lamu Girls Secondary School",
+        "county": "Lamu",
+        "level": "Secondary",
+        "enrollment": 989,
+        "mean_score": 7.5,
+        "year": 2023
+    },
+    {
+        "school": "Alliance High School",
+        "county": "Kiambu",
+        "level": "Secondary",
+        "enrollment": 1041,
+        "mean_score": 5.6,
+        "year": 2023
+    },
+    {
+        "school": "Narok Boys High School",
+        "county": "Narok",
+        "level": "Secondary",
+        "enrollment": 666,
+        "mean_score": 8.3,
+        "year": 2023
+    },
+    {
+        "school": "Likoni Primary School",
+        "county": "Mombasa",
+        "level": "Primary",
+        "enrollment": 413,
+        "mean_score": 5.1,
+        "year": 2023
+    },
+    {
+        "school": "St. Mary's School, Nairobi",
+        "county": "Nairobi",
+        "level": "Secondary",
+        "enrollment": 935,
+        "mean_score": 9.1,
+        "year": 2023
+    },
+    {
+        "school": "Pangani Girls School",
+        "county": "Nairobi",
+        "level": "Secondary",
+        "enrollment": 1941,
+        "mean_score": 5.4,
+        "year": 2023
+    },
+    {
+        "school": "Garissa High School",
+        "county": "Garissa",
+        "level": "Secondary",
+        "enrollment": 1319,
+        "mean_score": 5.2,
+        "year": 2023
+    },
+    {
+        "school": "Lamu Girls Secondary School",
+        "county": "Lamu",
+        "level": "Secondary",
+        "enrollment": 1463,
+        "mean_score": 8.5,
+        "year": 2023
+    },
+    {
+        "school": "Isiolo Boys High School",
+        "county": "Isiolo",
+        "level": "Secondary",
+        "enrollment": 332,
+        "mean_score": 6.8,
+        "year": 2023
+    },
+    {
+        "school": "Isiolo Boys High School",
+        "county": "Isiolo",
+        "level": "Secondary",
+        "enrollment": 652,
+        "mean_score": 8.6,
+        "year": 2023
+    },
+    {
+        "school": "Olympic Primary School",
+        "county": "Nairobi",
+        "level": "Primary",
+        "enrollment": 289,
+        "mean_score": 5.5,
+        "year": 2023
+    },
+    {
+        "school": "Alliance Girls High School",
+        "county": "Kiambu",
+        "level": "Secondary",
+        "enrollment": 651,
+        "mean_score": 6.6,
+        "year": 2023
+    },
+    {
+        "school": "Maseno School",
+        "county": "Kisumu",
+        "level": "Secondary",
+        "enrollment": 374,
+        "mean_score": 8.3,
+        "year": 2023
+    },
+    {
+        "school": "Mang'u High School",
+        "county": "Kiambu",
+        "level": "Secondary",
+        "enrollment": 587,
+        "mean_score": 5.2,
+        "year": 2023
+    },
+    {
+        "school": "Meru Town Primary School",
+        "county": "Meru",
+        "level": "Primary",
+        "enrollment": 474,
+        "mean_score": 5.0,
+        "year": 2023
+    },
+    {
+        "school": "Migori Primary School",
+        "county": "Migori",
+        "level": "Primary",
+        "enrollment": 277,
+        "mean_score": 9.4,
+        "year": 2023
+    },
+    {
+        "school": "Moi Primary School Kasarani",
+        "county": "Nairobi",
+        "level": "Primary",
+        "enrollment": 579,
         "mean_score": 7.9,
         "year": 2023
     },
     {
-        "school": "Likoni Primary",
+        "school": "Voi Primary School",
+        "county": "Taita Taveta",
+        "level": "Primary",
+        "enrollment": 709,
+        "mean_score": 8.7,
+        "year": 2023
+    },
+    {
+        "school": "Busia Primary School",
+        "county": "Busia",
+        "level": "Primary",
+        "enrollment": 382,
+        "mean_score": 9.0,
+        "year": 2023
+    },
+    {
+        "school": "Kapsabet Township Primary School",
+        "county": "Nandi",
+        "level": "Primary",
+        "enrollment": 652,
+        "mean_score": 8.6,
+        "year": 2023
+    },
+    {
+        "school": "Kisii Primary School",
+        "county": "Kisii",
+        "level": "Primary",
+        "enrollment": 826,
+        "mean_score": 5.3,
+        "year": 2023
+    },
+    {
+        "school": "Olympic Primary School",
+        "county": "Nairobi",
+        "level": "Primary",
+        "enrollment": 711,
+        "mean_score": 7.6,
+        "year": 2023
+    },
+    {
+        "school": "Maranda High School",
+        "county": "Siaya",
+        "level": "Secondary",
+        "enrollment": 1832,
+        "mean_score": 5.5,
+        "year": 2023
+    },
+    {
+        "school": "Maseno School",
+        "county": "Kisumu",
+        "level": "Secondary",
+        "enrollment": 773,
+        "mean_score": 5.3,
+        "year": 2023
+    },
+    {
+        "school": "Olympic Primary School",
+        "county": "Nairobi",
+        "level": "Primary",
+        "enrollment": 402,
+        "mean_score": 6.1,
+        "year": 2023
+    },
+    {
+        "school": "Nyeri High School",
+        "county": "Nyeri",
+        "level": "Secondary",
+        "enrollment": 596,
+        "mean_score": 7.4,
+        "year": 2023
+    },
+    {
+        "school": "Busia Primary School",
+        "county": "Busia",
+        "level": "Primary",
+        "enrollment": 539,
+        "mean_score": 6.3,
+        "year": 2023
+    },
+    {
+        "school": "Lenana School",
+        "county": "Nairobi",
+        "level": "Secondary",
+        "enrollment": 1570,
+        "mean_score": 5.7,
+        "year": 2023
+    },
+    {
+        "school": "Migori Primary School",
+        "county": "Migori",
+        "level": "Primary",
+        "enrollment": 576,
+        "mean_score": 9.4,
+        "year": 2023
+    },
+    {
+        "school": "Lenana School",
+        "county": "Nairobi",
+        "level": "Secondary",
+        "enrollment": 772,
+        "mean_score": 8.1,
+        "year": 2023
+    },
+    {
+        "school": "Mang'u High School",
+        "county": "Kiambu",
+        "level": "Secondary",
+        "enrollment": 684,
+        "mean_score": 6.7,
+        "year": 2023
+    },
+    {
+        "school": "Meru Town Primary School",
+        "county": "Meru",
+        "level": "Primary",
+        "enrollment": 529,
+        "mean_score": 7.8,
+        "year": 2023
+    },
+    {
+        "school": "Moi Girls High School Eldoret",
+        "county": "Uasin Gishu",
+        "level": "Secondary",
+        "enrollment": 641,
+        "mean_score": 5.4,
+        "year": 2023
+    },
+    {
+        "school": "Homa Bay Primary School",
+        "county": "Homa Bay",
+        "level": "Primary",
+        "enrollment": 229,
+        "mean_score": 7.4,
+        "year": 2023
+    },
+    {
+        "school": "Meru Town Primary School",
+        "county": "Meru",
+        "level": "Primary",
+        "enrollment": 850,
+        "mean_score": 6.0,
+        "year": 2023
+    },
+    {
+        "school": "Nairobi School",
+        "county": "Nairobi",
+        "level": "Secondary",
+        "enrollment": 1840,
+        "mean_score": 6.2,
+        "year": 2023
+    },
+    {
+        "school": "Meru Town Primary School",
+        "county": "Meru",
+        "level": "Primary",
+        "enrollment": 813,
+        "mean_score": 8.2,
+        "year": 2023
+    },
+    {
+        "school": "Kisii Primary School",
+        "county": "Kisii",
+        "level": "Primary",
+        "enrollment": 356,
+        "mean_score": 8.4,
+        "year": 2023
+    },
+    {
+        "school": "Homa Bay Primary School",
+        "county": "Homa Bay",
+        "level": "Primary",
+        "enrollment": 899,
+        "mean_score": 8.7,
+        "year": 2023
+    },
+    {
+        "school": "Isiolo Boys High School",
+        "county": "Isiolo",
+        "level": "Secondary",
+        "enrollment": 1093,
+        "mean_score": 9.2,
+        "year": 2023
+    },
+    {
+        "school": "Garissa High School",
+        "county": "Garissa",
+        "level": "Secondary",
+        "enrollment": 1899,
+        "mean_score": 6.5,
+        "year": 2023
+    },
+    {
+        "school": "Narok Boys High School",
+        "county": "Narok",
+        "level": "Secondary",
+        "enrollment": 1735,
+        "mean_score": 7.0,
+        "year": 2023
+    },
+    {
+        "school": "Aga Khan Primary School Nairobi",
+        "county": "Nairobi",
+        "level": "Primary",
+        "enrollment": 658,
+        "mean_score": 9.2,
+        "year": 2023
+    },
+    {
+        "school": "Kisumu Boys High School",
+        "county": "Kisumu",
+        "level": "Secondary",
+        "enrollment": 625,
+        "mean_score": 5.4,
+        "year": 2023
+    },
+    {
+        "school": "Aga Khan Primary School Nairobi",
+        "county": "Nairobi",
+        "level": "Primary",
+        "enrollment": 372,
+        "mean_score": 5.8,
+        "year": 2023
+    },
+    {
+        "school": "Embu Primary School",
+        "county": "Embu",
+        "level": "Primary",
+        "enrollment": 368,
+        "mean_score": 7.4,
+        "year": 2023
+    },
+    {
+        "school": "Lamu Girls Secondary School",
+        "county": "Lamu",
+        "level": "Secondary",
+        "enrollment": 1524,
+        "mean_score": 9.0,
+        "year": 2023
+    },
+    {
+        "school": "Alliance Girls High School",
+        "county": "Kiambu",
+        "level": "Secondary",
+        "enrollment": 1162,
+        "mean_score": 5.2,
+        "year": 2023
+    },
+    {
+        "school": "Kitui Central Primary School",
+        "county": "Kitui",
+        "level": "Primary",
+        "enrollment": 672,
+        "mean_score": 6.2,
+        "year": 2023
+    },
+    {
+        "school": "Alliance Girls High School",
+        "county": "Kiambu",
+        "level": "Secondary",
+        "enrollment": 420,
+        "mean_score": 8.4,
+        "year": 2023
+    },
+    {
+        "school": "Kisii Primary School",
+        "county": "Kisii",
+        "level": "Primary",
+        "enrollment": 438,
+        "mean_score": 8.7,
+        "year": 2023
+    },
+    {
+        "school": "Isiolo Boys High School",
+        "county": "Isiolo",
+        "level": "Secondary",
+        "enrollment": 509,
+        "mean_score": 9.1,
+        "year": 2023
+    },
+    {
+        "school": "Kisumu Boys High School",
+        "county": "Kisumu",
+        "level": "Secondary",
+        "enrollment": 1350,
+        "mean_score": 6.6,
+        "year": 2023
+    },
+    {
+        "school": "Naivasha Primary School",
+        "county": "Nakuru",
+        "level": "Primary",
+        "enrollment": 379,
+        "mean_score": 9.4,
+        "year": 2023
+    },
+    {
+        "school": "Voi Primary School",
+        "county": "Taita Taveta",
+        "level": "Primary",
+        "enrollment": 851,
+        "mean_score": 8.7,
+        "year": 2023
+    },
+    {
+        "school": "Kitui Central Primary School",
+        "county": "Kitui",
+        "level": "Primary",
+        "enrollment": 205,
+        "mean_score": 5.0,
+        "year": 2023
+    },
+    {
+        "school": "Alliance Girls High School",
+        "county": "Kiambu",
+        "level": "Secondary",
+        "enrollment": 535,
+        "mean_score": 9.3,
+        "year": 2023
+    },
+    {
+        "school": "Kapsabet Boys High School",
+        "county": "Nandi",
+        "level": "Secondary",
+        "enrollment": 1940,
+        "mean_score": 6.6,
+        "year": 2023
+    },
+    {
+        "school": "Alliance Girls High School",
+        "county": "Kiambu",
+        "level": "Secondary",
+        "enrollment": 1984,
+        "mean_score": 7.9,
+        "year": 2023
+    },
+    {
+        "school": "Homa Bay Primary School",
+        "county": "Homa Bay",
+        "level": "Primary",
+        "enrollment": 755,
+        "mean_score": 6.3,
+        "year": 2023
+    },
+    {
+        "school": "Bungoma Township Primary School",
+        "county": "Bungoma",
+        "level": "Primary",
+        "enrollment": 737,
+        "mean_score": 6.0,
+        "year": 2023
+    },
+    {
+        "school": "St. Mary's School, Nairobi",
+        "county": "Nairobi",
+        "level": "Secondary",
+        "enrollment": 1820,
+        "mean_score": 7.2,
+        "year": 2023
+    },
+    {
+        "school": "Kabarnet High School",
+        "county": "Baringo",
+        "level": "Secondary",
+        "enrollment": 1493,
+        "mean_score": 8.6,
+        "year": 2023
+    },
+    {
+        "school": "Raha Primary School",
+        "county": "Migori",
+        "level": "Primary",
+        "enrollment": 790,
+        "mean_score": 9.2,
+        "year": 2023
+    },
+    {
+        "school": "Nyeri High School",
+        "county": "Nyeri",
+        "level": "Secondary",
+        "enrollment": 657,
+        "mean_score": 8.7,
+        "year": 2023
+    },
+    {
+        "school": "Isiolo Boys High School",
+        "county": "Isiolo",
+        "level": "Secondary",
+        "enrollment": 1765,
+        "mean_score": 6.0,
+        "year": 2023
+    },
+    {
+        "school": "Raha Primary School",
+        "county": "Migori",
+        "level": "Primary",
+        "enrollment": 712,
+        "mean_score": 7.2,
+        "year": 2023
+    },
+    {
+        "school": "Naivasha Primary School",
+        "county": "Nakuru",
+        "level": "Primary",
+        "enrollment": 833,
+        "mean_score": 9.1,
+        "year": 2023
+    },
+    {
+        "school": "Kabarnet High School",
+        "county": "Baringo",
+        "level": "Secondary",
+        "enrollment": 1203,
+        "mean_score": 8.9,
+        "year": 2023
+    },
+    {
+        "school": "Olympic Primary School",
+        "county": "Nairobi",
+        "level": "Primary",
+        "enrollment": 780,
+        "mean_score": 6.5,
+        "year": 2023
+    },
+    {
+        "school": "Nairobi School",
+        "county": "Nairobi",
+        "level": "Secondary",
+        "enrollment": 1196,
+        "mean_score": 6.8,
+        "year": 2023
+    },
+    {
+        "school": "Embu Primary School",
+        "county": "Embu",
+        "level": "Primary",
+        "enrollment": 700,
+        "mean_score": 8.3,
+        "year": 2023
+    },
+    {
+        "school": "Pangani Girls School",
+        "county": "Nairobi",
+        "level": "Secondary",
+        "enrollment": 1075,
+        "mean_score": 8.9,
+        "year": 2023
+    },
+    {
+        "school": "Maseno School",
+        "county": "Kisumu",
+        "level": "Secondary",
+        "enrollment": 1100,
+        "mean_score": 8.7,
+        "year": 2023
+    },
+    {
+        "school": "Busia Primary School",
+        "county": "Busia",
+        "level": "Primary",
+        "enrollment": 602,
+        "mean_score": 8.9,
+        "year": 2023
+    },
+    {
+        "school": "Likoni Primary School",
         "county": "Mombasa",
         "level": "Primary",
-        "enrollment": 530,
+        "enrollment": 228,
+        "mean_score": 9.4,
+        "year": 2023
+    },
+    {
+        "school": "Bungoma Township Primary School",
+        "county": "Bungoma",
+        "level": "Primary",
+        "enrollment": 791,
+        "mean_score": 5.8,
+        "year": 2023
+    },
+    {
+        "school": "Kisii Primary School",
+        "county": "Kisii",
+        "level": "Primary",
+        "enrollment": 595,
+        "mean_score": 7.7,
+        "year": 2023
+    },
+    {
+        "school": "Homa Bay Primary School",
+        "county": "Homa Bay",
+        "level": "Primary",
+        "enrollment": 860,
+        "mean_score": 7.7,
+        "year": 2023
+    },
+    {
+        "school": "Nairobi School",
+        "county": "Nairobi",
+        "level": "Secondary",
+        "enrollment": 533,
+        "mean_score": 8.9,
+        "year": 2023
+    },
+    {
+        "school": "Westlands Primary School",
+        "county": "Nairobi",
+        "level": "Primary",
+        "enrollment": 701,
+        "mean_score": 9.0,
+        "year": 2023
+    },
+    {
+        "school": "Pangani Girls School",
+        "county": "Nairobi",
+        "level": "Secondary",
+        "enrollment": 808,
+        "mean_score": 8.4,
+        "year": 2023
+    },
+    {
+        "school": "Nyeri Township Primary School",
+        "county": "Nyeri",
+        "level": "Primary",
+        "enrollment": 214,
+        "mean_score": 8.7,
+        "year": 2023
+    },
+    {
+        "school": "Nyeri Township Primary School",
+        "county": "Nyeri",
+        "level": "Primary",
+        "enrollment": 745,
+        "mean_score": 6.6,
+        "year": 2023
+    },
+    {
+        "school": "Likoni Primary School",
+        "county": "Mombasa",
+        "level": "Primary",
+        "enrollment": 395,
+        "mean_score": 6.7,
+        "year": 2023
+    },
+    {
+        "school": "Homa Bay Primary School",
+        "county": "Homa Bay",
+        "level": "Primary",
+        "enrollment": 670,
+        "mean_score": 6.5,
+        "year": 2023
+    },
+    {
+        "school": "Kisumu Boys High School",
+        "county": "Kisumu",
+        "level": "Secondary",
+        "enrollment": 1262,
+        "mean_score": 6.0,
+        "year": 2023
+    },
+    {
+        "school": "Westlands Primary School",
+        "county": "Nairobi",
+        "level": "Primary",
+        "enrollment": 272,
+        "mean_score": 6.6,
+        "year": 2023
+    },
+    {
+        "school": "Raha Primary School",
+        "county": "Migori",
+        "level": "Primary",
+        "enrollment": 328,
+        "mean_score": 9.0,
+        "year": 2023
+    },
+    {
+        "school": "Naivasha Primary School",
+        "county": "Nakuru",
+        "level": "Primary",
+        "enrollment": 634,
+        "mean_score": 5.9,
+        "year": 2023
+    },
+    {
+        "school": "Friends School Kamusinga",
+        "county": "Bungoma",
+        "level": "Secondary",
+        "enrollment": 1614,
+        "mean_score": 8.2,
+        "year": 2023
+    },
+    {
+        "school": "Meru Town Primary School",
+        "county": "Meru",
+        "level": "Primary",
+        "enrollment": 404,
+        "mean_score": 5.6,
+        "year": 2023
+    },
+    {
+        "school": "Voi Primary School",
+        "county": "Taita Taveta",
+        "level": "Primary",
+        "enrollment": 459,
+        "mean_score": 5.6,
+        "year": 2023
+    },
+    {
+        "school": "Aga Khan Primary School Nairobi",
+        "county": "Nairobi",
+        "level": "Primary",
+        "enrollment": 229,
+        "mean_score": 8.2,
+        "year": 2023
+    },
+    {
+        "school": "Garissa High School",
+        "county": "Garissa",
+        "level": "Secondary",
+        "enrollment": 769,
+        "mean_score": 6.2,
+        "year": 2023
+    },
+    {
+        "school": "Kisii Primary School",
+        "county": "Kisii",
+        "level": "Primary",
+        "enrollment": 647,
+        "mean_score": 7.9,
+        "year": 2023
+    },
+    {
+        "school": "Voi Primary School",
+        "county": "Taita Taveta",
+        "level": "Primary",
+        "enrollment": 587,
+        "mean_score": 5.2,
+        "year": 2023
+    },
+    {
+        "school": "Habaswein Primary School",
+        "county": "Wajir",
+        "level": "Primary",
+        "enrollment": 826,
+        "mean_score": 5.9,
+        "year": 2023
+    },
+    {
+        "school": "Migori Primary School",
+        "county": "Migori",
+        "level": "Primary",
+        "enrollment": 481,
+        "mean_score": 7.6,
+        "year": 2023
+    },
+    {
+        "school": "Migori Primary School",
+        "county": "Migori",
+        "level": "Primary",
+        "enrollment": 336,
+        "mean_score": 9.4,
+        "year": 2023
+    },
+    {
+        "school": "Mang'u High School",
+        "county": "Kiambu",
+        "level": "Secondary",
+        "enrollment": 1410,
+        "mean_score": 6.8,
+        "year": 2023
+    },
+    {
+        "school": "Garissa High School",
+        "county": "Garissa",
+        "level": "Secondary",
+        "enrollment": 1984,
+        "mean_score": 8.5,
+        "year": 2023
+    },
+    {
+        "school": "Kehancha Primary School",
+        "county": "Migori",
+        "level": "Primary",
+        "enrollment": 213,
+        "mean_score": 8.7,
+        "year": 2023
+    },
+    {
+        "school": "Pangani Girls School",
+        "county": "Nairobi",
+        "level": "Secondary",
+        "enrollment": 1396,
+        "mean_score": 7.4,
+        "year": 2023
+    },
+    {
+        "school": "Lamu Girls Secondary School",
+        "county": "Lamu",
+        "level": "Secondary",
+        "enrollment": 1861,
+        "mean_score": 6.7,
+        "year": 2023
+    },
+    {
+        "school": "Westlands Primary School",
+        "county": "Nairobi",
+        "level": "Primary",
+        "enrollment": 722,
+        "mean_score": 6.7,
+        "year": 2023
+    },
+    {
+        "school": "Moi Primary School Kasarani",
+        "county": "Nairobi",
+        "level": "Primary",
+        "enrollment": 411,
+        "mean_score": 7.1,
+        "year": 2023
+    },
+    {
+        "school": "Lenana School",
+        "county": "Nairobi",
+        "level": "Secondary",
+        "enrollment": 1823,
+        "mean_score": 7.0,
+        "year": 2023
+    },
+    {
+        "school": "Pangani Girls School",
+        "county": "Nairobi",
+        "level": "Secondary",
+        "enrollment": 1666,
+        "mean_score": 6.8,
+        "year": 2023
+    },
+    {
+        "school": "Homa Bay Primary School",
+        "county": "Homa Bay",
+        "level": "Primary",
+        "enrollment": 547,
+        "mean_score": 8.8,
+        "year": 2023
+    },
+    {
+        "school": "Pangani Girls School",
+        "county": "Nairobi",
+        "level": "Secondary",
+        "enrollment": 953,
+        "mean_score": 8.9,
+        "year": 2023
+    },
+    {
+        "school": "Kitui Central Primary School",
+        "county": "Kitui",
+        "level": "Primary",
+        "enrollment": 204,
+        "mean_score": 8.8,
+        "year": 2023
+    },
+    {
+        "school": "Nyeri High School",
+        "county": "Nyeri",
+        "level": "Secondary",
+        "enrollment": 453,
+        "mean_score": 5.4,
+        "year": 2023
+    },
+    {
+        "school": "Olympic Primary School",
+        "county": "Nairobi",
+        "level": "Primary",
+        "enrollment": 444,
+        "mean_score": 5.4,
+        "year": 2023
+    },
+    {
+        "school": "Kisumu Boys High School",
+        "county": "Kisumu",
+        "level": "Secondary",
+        "enrollment": 746,
+        "mean_score": 7.7,
+        "year": 2023
+    },
+    {
+        "school": "Raha Primary School",
+        "county": "Migori",
+        "level": "Primary",
+        "enrollment": 678,
+        "mean_score": 9.1,
+        "year": 2023
+    },
+    {
+        "school": "Meru Town Primary School",
+        "county": "Meru",
+        "level": "Primary",
+        "enrollment": 833,
+        "mean_score": 9.1,
+        "year": 2023
+    },
+    {
+        "school": "Kapsabet Boys High School",
+        "county": "Nandi",
+        "level": "Secondary",
+        "enrollment": 734,
+        "mean_score": 7.4,
+        "year": 2023
+    },
+    {
+        "school": "Westlands Primary School",
+        "county": "Nairobi",
+        "level": "Primary",
+        "enrollment": 857,
+        "mean_score": 7.5,
+        "year": 2023
+    },
+    {
+        "school": "Lamu Girls Secondary School",
+        "county": "Lamu",
+        "level": "Secondary",
+        "enrollment": 1036,
+        "mean_score": 8.3,
+        "year": 2023
+    },
+    {
+        "school": "Narok Boys High School",
+        "county": "Narok",
+        "level": "Secondary",
+        "enrollment": 869,
+        "mean_score": 6.0,
+        "year": 2023
+    },
+    {
+        "school": "Moi Primary School Kasarani",
+        "county": "Nairobi",
+        "level": "Primary",
+        "enrollment": 235,
+        "mean_score": 5.2,
+        "year": 2023
+    },
+    {
+        "school": "Habaswein Primary School",
+        "county": "Wajir",
+        "level": "Primary",
+        "enrollment": 718,
+        "mean_score": 9.1,
+        "year": 2023
+    },
+    {
+        "school": "Moi Girls High School Eldoret",
+        "county": "Uasin Gishu",
+        "level": "Secondary",
+        "enrollment": 1845,
+        "mean_score": 5.3,
+        "year": 2023
+    },
+    {
+        "school": "Isiolo Boys High School",
+        "county": "Isiolo",
+        "level": "Secondary",
+        "enrollment": 1985,
+        "mean_score": 8.3,
+        "year": 2023
+    },
+    {
+        "school": "Naivasha Primary School",
+        "county": "Nakuru",
+        "level": "Primary",
+        "enrollment": 739,
+        "mean_score": 5.7,
+        "year": 2023
+    },
+    {
+        "school": "Alliance High School",
+        "county": "Kiambu",
+        "level": "Secondary",
+        "enrollment": 1276,
+        "mean_score": 7.0,
+        "year": 2023
+    },
+    {
+        "school": "Voi Primary School",
+        "county": "Taita Taveta",
+        "level": "Primary",
+        "enrollment": 728,
+        "mean_score": 5.6,
+        "year": 2023
+    },
+    {
+        "school": "Kabarnet High School",
+        "county": "Baringo",
+        "level": "Secondary",
+        "enrollment": 1349,
+        "mean_score": 8.5,
+        "year": 2023
+    },
+    {
+        "school": "Kisumu Boys High School",
+        "county": "Kisumu",
+        "level": "Secondary",
+        "enrollment": 791,
+        "mean_score": 5.0,
+        "year": 2023
+    },
+    {
+        "school": "Kisumu Boys High School",
+        "county": "Kisumu",
+        "level": "Secondary",
+        "enrollment": 931,
+        "mean_score": 8.9,
+        "year": 2023
+    },
+    {
+        "school": "Narok Boys High School",
+        "county": "Narok",
+        "level": "Secondary",
+        "enrollment": 1529,
+        "mean_score": 7.2,
+        "year": 2023
+    },
+    {
+        "school": "Aga Khan Primary School Nairobi",
+        "county": "Nairobi",
+        "level": "Primary",
+        "enrollment": 287,
+        "mean_score": 6.2,
+        "year": 2023
+    },
+    {
+        "school": "Aga Khan Primary School Nairobi",
+        "county": "Nairobi",
+        "level": "Primary",
+        "enrollment": 388,
+        "mean_score": 7.8,
+        "year": 2023
+    },
+    {
+        "school": "Alliance High School",
+        "county": "Kiambu",
+        "level": "Secondary",
+        "enrollment": 553,
+        "mean_score": 8.4,
+        "year": 2023
+    },
+    {
+        "school": "Olympic Primary School",
+        "county": "Nairobi",
+        "level": "Primary",
+        "enrollment": 652,
+        "mean_score": 7.2,
+        "year": 2023
+    },
+    {
+        "school": "Migori Primary School",
+        "county": "Migori",
+        "level": "Primary",
+        "enrollment": 882,
+        "mean_score": 5.9,
+        "year": 2023
+    },
+    {
+        "school": "Likoni Primary School",
+        "county": "Mombasa",
+        "level": "Primary",
+        "enrollment": 302,
+        "mean_score": 9.0,
+        "year": 2023
+    },
+    {
+        "school": "Lenana School",
+        "county": "Nairobi",
+        "level": "Secondary",
+        "enrollment": 917,
+        "mean_score": 9.5,
+        "year": 2023
+    },
+    {
+        "school": "Aga Khan Primary School Nairobi",
+        "county": "Nairobi",
+        "level": "Primary",
+        "enrollment": 666,
+        "mean_score": 7.7,
+        "year": 2023
+    },
+    {
+        "school": "Kapsabet Township Primary School",
+        "county": "Nandi",
+        "level": "Primary",
+        "enrollment": 418,
+        "mean_score": 6.3,
+        "year": 2023
+    },
+    {
+        "school": "Westlands Primary School",
+        "county": "Nairobi",
+        "level": "Primary",
+        "enrollment": 518,
+        "mean_score": 5.0,
+        "year": 2023
+    },
+    {
+        "school": "Westlands Primary School",
+        "county": "Nairobi",
+        "level": "Primary",
+        "enrollment": 299,
+        "mean_score": 8.7,
+        "year": 2023
+    },
+    {
+        "school": "Garissa High School",
+        "county": "Garissa",
+        "level": "Secondary",
+        "enrollment": 1207,
+        "mean_score": 7.3,
+        "year": 2023
+    },
+    {
+        "school": "Aga Khan Primary School Nairobi",
+        "county": "Nairobi",
+        "level": "Primary",
+        "enrollment": 643,
+        "mean_score": 9.4,
+        "year": 2023
+    },
+    {
+        "school": "Kabarnet High School",
+        "county": "Baringo",
+        "level": "Secondary",
+        "enrollment": 1223,
+        "mean_score": 9.4,
+        "year": 2023
+    },
+    {
+        "school": "Alliance High School",
+        "county": "Kiambu",
+        "level": "Secondary",
+        "enrollment": 1201,
+        "mean_score": 7.6,
+        "year": 2023
+    },
+    {
+        "school": "Alliance Girls High School",
+        "county": "Kiambu",
+        "level": "Secondary",
+        "enrollment": 982,
+        "mean_score": 7.8,
+        "year": 2023
+    },
+    {
+        "school": "Westlands Primary School",
+        "county": "Nairobi",
+        "level": "Primary",
+        "enrollment": 576,
+        "mean_score": 8.5,
+        "year": 2023
+    },
+    {
+        "school": "Maranda High School",
+        "county": "Siaya",
+        "level": "Secondary",
+        "enrollment": 1146,
+        "mean_score": 9.3,
+        "year": 2023
+    },
+    {
+        "school": "Kehancha Primary School",
+        "county": "Migori",
+        "level": "Primary",
+        "enrollment": 736,
+        "mean_score": 7.4,
+        "year": 2023
+    },
+    {
+        "school": "Habaswein Primary School",
+        "county": "Wajir",
+        "level": "Primary",
+        "enrollment": 585,
+        "mean_score": 9.2,
+        "year": 2023
+    },
+    {
+        "school": "Habaswein Primary School",
+        "county": "Wajir",
+        "level": "Primary",
+        "enrollment": 852,
+        "mean_score": 6.1,
+        "year": 2023
+    },
+    {
+        "school": "Narok Boys High School",
+        "county": "Narok",
+        "level": "Secondary",
+        "enrollment": 686,
+        "mean_score": 5.2,
+        "year": 2023
+    },
+    {
+        "school": "Busia Primary School",
+        "county": "Busia",
+        "level": "Primary",
+        "enrollment": 433,
+        "mean_score": 5.1,
+        "year": 2023
+    },
+    {
+        "school": "Isiolo Boys High School",
+        "county": "Isiolo",
+        "level": "Secondary",
+        "enrollment": 1945,
+        "mean_score": 5.8,
+        "year": 2023
+    },
+    {
+        "school": "Kabarnet High School",
+        "county": "Baringo",
+        "level": "Secondary",
+        "enrollment": 793,
+        "mean_score": 6.1,
+        "year": 2023
+    },
+    {
+        "school": "Kapsabet Boys High School",
+        "county": "Nandi",
+        "level": "Secondary",
+        "enrollment": 1664,
+        "mean_score": 7.2,
+        "year": 2023
+    },
+    {
+        "school": "Homa Bay Primary School",
+        "county": "Homa Bay",
+        "level": "Primary",
+        "enrollment": 829,
+        "mean_score": 9.2,
+        "year": 2023
+    },
+    {
+        "school": "Nyeri Township Primary School",
+        "county": "Nyeri",
+        "level": "Primary",
+        "enrollment": 849,
+        "mean_score": 7.9,
+        "year": 2023
+    },
+    {
+        "school": "Bungoma Township Primary School",
+        "county": "Bungoma",
+        "level": "Primary",
+        "enrollment": 616,
+        "mean_score": 9.3,
+        "year": 2023
+    },
+    {
+        "school": "Mandera Secondary School",
+        "county": "Mandera",
+        "level": "Secondary",
+        "enrollment": 494,
+        "mean_score": 6.3,
+        "year": 2023
+    },
+    {
+        "school": "Likoni Primary School",
+        "county": "Mombasa",
+        "level": "Primary",
+        "enrollment": 841,
+        "mean_score": 5.6,
+        "year": 2023
+    },
+    {
+        "school": "Aga Khan Primary School Nairobi",
+        "county": "Nairobi",
+        "level": "Primary",
+        "enrollment": 569,
+        "mean_score": 5.8,
+        "year": 2023
+    },
+    {
+        "school": "Nyeri High School",
+        "county": "Nyeri",
+        "level": "Secondary",
+        "enrollment": 1528,
+        "mean_score": 9.4,
+        "year": 2023
+    },
+    {
+        "school": "Nyeri Township Primary School",
+        "county": "Nyeri",
+        "level": "Primary",
+        "enrollment": 705,
+        "mean_score": 9.0,
+        "year": 2023
+    },
+    {
+        "school": "Raha Primary School",
+        "county": "Migori",
+        "level": "Primary",
+        "enrollment": 351,
+        "mean_score": 9.4,
+        "year": 2023
+    },
+    {
+        "school": "Nyeri High School",
+        "county": "Nyeri",
+        "level": "Secondary",
+        "enrollment": 1268,
+        "mean_score": 5.3,
+        "year": 2023
+    },
+    {
+        "school": "Pangani Girls School",
+        "county": "Nairobi",
+        "level": "Secondary",
+        "enrollment": 1984,
+        "mean_score": 6.0,
+        "year": 2023
+    },
+    {
+        "school": "Isiolo Boys High School",
+        "county": "Isiolo",
+        "level": "Secondary",
+        "enrollment": 520,
+        "mean_score": 6.8,
+        "year": 2023
+    },
+    {
+        "school": "Isiolo Boys High School",
+        "county": "Isiolo",
+        "level": "Secondary",
+        "enrollment": 406,
+        "mean_score": 7.1,
+        "year": 2023
+    },
+    {
+        "school": "Kapsabet Boys High School",
+        "county": "Nandi",
+        "level": "Secondary",
+        "enrollment": 1854,
+        "mean_score": 8.4,
+        "year": 2023
+    },
+    {
+        "school": "Kapsabet Township Primary School",
+        "county": "Nandi",
+        "level": "Primary",
+        "enrollment": 870,
+        "mean_score": 6.4,
+        "year": 2023
+    },
+    {
+        "school": "Kisumu Boys High School",
+        "county": "Kisumu",
+        "level": "Secondary",
+        "enrollment": 1737,
+        "mean_score": 7.3,
+        "year": 2023
+    },
+    {
+        "school": "Lamu Girls Secondary School",
+        "county": "Lamu",
+        "level": "Secondary",
+        "enrollment": 1527,
+        "mean_score": 9.5,
+        "year": 2023
+    },
+    {
+        "school": "Kisumu Boys High School",
+        "county": "Kisumu",
+        "level": "Secondary",
+        "enrollment": 546,
+        "mean_score": 9.0,
+        "year": 2023
+    },
+    {
+        "school": "Maseno School",
+        "county": "Kisumu",
+        "level": "Secondary",
+        "enrollment": 711,
+        "mean_score": 5.5,
+        "year": 2023
+    },
+    {
+        "school": "Westlands Primary School",
+        "county": "Nairobi",
+        "level": "Primary",
+        "enrollment": 784,
+        "mean_score": 5.1,
+        "year": 2023
+    },
+    {
+        "school": "Embu Primary School",
+        "county": "Embu",
+        "level": "Primary",
+        "enrollment": 662,
+        "mean_score": 8.5,
+        "year": 2023
+    },
+    {
+        "school": "Alliance Girls High School",
+        "county": "Kiambu",
+        "level": "Secondary",
+        "enrollment": 1625,
+        "mean_score": 9.0,
+        "year": 2023
+    },
+    {
+        "school": "Lenana School",
+        "county": "Nairobi",
+        "level": "Secondary",
+        "enrollment": 760,
+        "mean_score": 7.6,
+        "year": 2023
+    },
+    {
+        "school": "Migori Primary School",
+        "county": "Migori",
+        "level": "Primary",
+        "enrollment": 773,
+        "mean_score": 9.0,
+        "year": 2023
+    },
+    {
+        "school": "Lenana School",
+        "county": "Nairobi",
+        "level": "Secondary",
+        "enrollment": 1966,
+        "mean_score": 7.3,
+        "year": 2023
+    },
+    {
+        "school": "Kabarnet High School",
+        "county": "Baringo",
+        "level": "Secondary",
+        "enrollment": 1320,
+        "mean_score": 5.5,
+        "year": 2023
+    },
+    {
+        "school": "Isiolo Boys High School",
+        "county": "Isiolo",
+        "level": "Secondary",
+        "enrollment": 693,
+        "mean_score": 8.6,
+        "year": 2023
+    },
+    {
+        "school": "Kabarnet High School",
+        "county": "Baringo",
+        "level": "Secondary",
+        "enrollment": 1922,
+        "mean_score": 8.0,
+        "year": 2023
+    },
+    {
+        "school": "Moi Girls High School Eldoret",
+        "county": "Uasin Gishu",
+        "level": "Secondary",
+        "enrollment": 1285,
+        "mean_score": 5.8,
+        "year": 2023
+    },
+    {
+        "school": "Alliance Girls High School",
+        "county": "Kiambu",
+        "level": "Secondary",
+        "enrollment": 954,
+        "mean_score": 5.5,
+        "year": 2023
+    },
+    {
+        "school": "Friends School Kamusinga",
+        "county": "Bungoma",
+        "level": "Secondary",
+        "enrollment": 479,
+        "mean_score": 7.8,
+        "year": 2023
+    },
+    {
+        "school": "Pangani Girls School",
+        "county": "Nairobi",
+        "level": "Secondary",
+        "enrollment": 1915,
+        "mean_score": 8.0,
+        "year": 2023
+    },
+    {
+        "school": "Bungoma Township Primary School",
+        "county": "Bungoma",
+        "level": "Primary",
+        "enrollment": 649,
+        "mean_score": 5.5,
+        "year": 2023
+    },
+    {
+        "school": "Meru Town Primary School",
+        "county": "Meru",
+        "level": "Primary",
+        "enrollment": 608,
+        "mean_score": 8.4,
+        "year": 2023
+    },
+    {
+        "school": "Likoni Primary School",
+        "county": "Mombasa",
+        "level": "Primary",
+        "enrollment": 391,
+        "mean_score": 8.7,
+        "year": 2023
+    },
+    {
+        "school": "Westlands Primary School",
+        "county": "Nairobi",
+        "level": "Primary",
+        "enrollment": 486,
+        "mean_score": 5.8,
+        "year": 2023
+    },
+    {
+        "school": "Meru Town Primary School",
+        "county": "Meru",
+        "level": "Primary",
+        "enrollment": 868,
+        "mean_score": 8.2,
+        "year": 2023
+    },
+    {
+        "school": "St. Mary's School, Nairobi",
+        "county": "Nairobi",
+        "level": "Secondary",
+        "enrollment": 366,
+        "mean_score": 7.9,
+        "year": 2023
+    },
+    {
+        "school": "Homa Bay Primary School",
+        "county": "Homa Bay",
+        "level": "Primary",
+        "enrollment": 586,
+        "mean_score": 9.1,
+        "year": 2023
+    },
+    {
+        "school": "Olympic Primary School",
+        "county": "Nairobi",
+        "level": "Primary",
+        "enrollment": 900,
+        "mean_score": 5.4,
+        "year": 2023
+    },
+    {
+        "school": "Kapsabet Township Primary School",
+        "county": "Nandi",
+        "level": "Primary",
+        "enrollment": 295,
+        "mean_score": 6.0,
+        "year": 2023
+    },
+    {
+        "school": "Nyeri Township Primary School",
+        "county": "Nyeri",
+        "level": "Primary",
+        "enrollment": 626,
+        "mean_score": 6.3,
+        "year": 2023
+    },
+    {
+        "school": "Kisii Primary School",
+        "county": "Kisii",
+        "level": "Primary",
+        "enrollment": 715,
+        "mean_score": 9.0,
+        "year": 2023
+    },
+    {
+        "school": "Kabarnet High School",
+        "county": "Baringo",
+        "level": "Secondary",
+        "enrollment": 1108,
+        "mean_score": 8.7,
+        "year": 2023
+    },
+    {
+        "school": "Likoni Primary School",
+        "county": "Mombasa",
+        "level": "Primary",
+        "enrollment": 497,
+        "mean_score": 7.3,
+        "year": 2023
+    },
+    {
+        "school": "Kapsabet Boys High School",
+        "county": "Nandi",
+        "level": "Secondary",
+        "enrollment": 1025,
+        "mean_score": 9.5,
+        "year": 2023
+    },
+    {
+        "school": "Bungoma Township Primary School",
+        "county": "Bungoma",
+        "level": "Primary",
+        "enrollment": 605,
+        "mean_score": 7.4,
+        "year": 2023
+    },
+    {
+        "school": "Meru Town Primary School",
+        "county": "Meru",
+        "level": "Primary",
+        "enrollment": 472,
+        "mean_score": 6.0,
+        "year": 2023
+    },
+    {
+        "school": "Embu Primary School",
+        "county": "Embu",
+        "level": "Primary",
+        "enrollment": 397,
         "mean_score": 6.9,
+        "year": 2023
+    },
+    {
+        "school": "Kisii Primary School",
+        "county": "Kisii",
+        "level": "Primary",
+        "enrollment": 349,
+        "mean_score": 5.8,
+        "year": 2023
+    },
+    {
+        "school": "Mandera Secondary School",
+        "county": "Mandera",
+        "level": "Secondary",
+        "enrollment": 908,
+        "mean_score": 9.0,
+        "year": 2023
+    },
+    {
+        "school": "Maranda High School",
+        "county": "Siaya",
+        "level": "Secondary",
+        "enrollment": 1542,
+        "mean_score": 9.1,
+        "year": 2023
+    },
+    {
+        "school": "Kabarnet High School",
+        "county": "Baringo",
+        "level": "Secondary",
+        "enrollment": 946,
+        "mean_score": 8.7,
+        "year": 2023
+    },
+    {
+        "school": "Kisumu Boys High School",
+        "county": "Kisumu",
+        "level": "Secondary",
+        "enrollment": 1092,
+        "mean_score": 6.0,
+        "year": 2023
+    },
+    {
+        "school": "Olympic Primary School",
+        "county": "Nairobi",
+        "level": "Primary",
+        "enrollment": 233,
+        "mean_score": 7.6,
+        "year": 2023
+    },
+    {
+        "school": "Kapsabet Township Primary School",
+        "county": "Nandi",
+        "level": "Primary",
+        "enrollment": 529,
+        "mean_score": 5.5,
+        "year": 2023
+    },
+    {
+        "school": "Lenana School",
+        "county": "Nairobi",
+        "level": "Secondary",
+        "enrollment": 1405,
+        "mean_score": 6.5,
+        "year": 2023
+    },
+    {
+        "school": "Habaswein Primary School",
+        "county": "Wajir",
+        "level": "Primary",
+        "enrollment": 244,
+        "mean_score": 6.6,
+        "year": 2023
+    },
+    {
+        "school": "Lamu Girls Secondary School",
+        "county": "Lamu",
+        "level": "Secondary",
+        "enrollment": 1314,
+        "mean_score": 8.1,
+        "year": 2023
+    },
+    {
+        "school": "Mandera Secondary School",
+        "county": "Mandera",
+        "level": "Secondary",
+        "enrollment": 1157,
+        "mean_score": 9.1,
+        "year": 2023
+    },
+    {
+        "school": "Raha Primary School",
+        "county": "Migori",
+        "level": "Primary",
+        "enrollment": 387,
+        "mean_score": 6.6,
+        "year": 2023
+    },
+    {
+        "school": "Voi Primary School",
+        "county": "Taita Taveta",
+        "level": "Primary",
+        "enrollment": 758,
+        "mean_score": 7.6,
+        "year": 2023
+    },
+    {
+        "school": "Pangani Girls School",
+        "county": "Nairobi",
+        "level": "Secondary",
+        "enrollment": 587,
+        "mean_score": 7.6,
+        "year": 2023
+    },
+    {
+        "school": "Embu Primary School",
+        "county": "Embu",
+        "level": "Primary",
+        "enrollment": 573,
+        "mean_score": 5.8,
+        "year": 2023
+    },
+    {
+        "school": "Migori Primary School",
+        "county": "Migori",
+        "level": "Primary",
+        "enrollment": 778,
+        "mean_score": 8.3,
+        "year": 2023
+    },
+    {
+        "school": "Kapsabet Boys High School",
+        "county": "Nandi",
+        "level": "Secondary",
+        "enrollment": 525,
+        "mean_score": 7.6,
+        "year": 2023
+    },
+    {
+        "school": "Westlands Primary School",
+        "county": "Nairobi",
+        "level": "Primary",
+        "enrollment": 465,
+        "mean_score": 7.5,
+        "year": 2023
+    },
+    {
+        "school": "Isiolo Boys High School",
+        "county": "Isiolo",
+        "level": "Secondary",
+        "enrollment": 850,
+        "mean_score": 5.5,
+        "year": 2023
+    },
+    {
+        "school": "Alliance Girls High School",
+        "county": "Kiambu",
+        "level": "Secondary",
+        "enrollment": 1323,
+        "mean_score": 9.3,
+        "year": 2023
+    },
+    {
+        "school": "Meru Town Primary School",
+        "county": "Meru",
+        "level": "Primary",
+        "enrollment": 338,
+        "mean_score": 8.6,
+        "year": 2023
+    },
+    {
+        "school": "Alliance High School",
+        "county": "Kiambu",
+        "level": "Secondary",
+        "enrollment": 446,
+        "mean_score": 7.7,
+        "year": 2023
+    },
+    {
+        "school": "Maseno School",
+        "county": "Kisumu",
+        "level": "Secondary",
+        "enrollment": 1847,
+        "mean_score": 5.6,
+        "year": 2023
+    },
+    {
+        "school": "Kapsabet Township Primary School",
+        "county": "Nandi",
+        "level": "Primary",
+        "enrollment": 536,
+        "mean_score": 7.2,
+        "year": 2023
+    },
+    {
+        "school": "Kitui Central Primary School",
+        "county": "Kitui",
+        "level": "Primary",
+        "enrollment": 871,
+        "mean_score": 6.4,
+        "year": 2023
+    },
+    {
+        "school": "Bungoma Township Primary School",
+        "county": "Bungoma",
+        "level": "Primary",
+        "enrollment": 769,
+        "mean_score": 5.7,
+        "year": 2023
+    },
+    {
+        "school": "Nyeri Township Primary School",
+        "county": "Nyeri",
+        "level": "Primary",
+        "enrollment": 398,
+        "mean_score": 6.7,
+        "year": 2023
+    },
+    {
+        "school": "Voi Primary School",
+        "county": "Taita Taveta",
+        "level": "Primary",
+        "enrollment": 817,
+        "mean_score": 8.4,
+        "year": 2023
+    },
+    {
+        "school": "Maseno School",
+        "county": "Kisumu",
+        "level": "Secondary",
+        "enrollment": 1543,
+        "mean_score": 9.4,
+        "year": 2023
+    },
+    {
+        "school": "St. Mary's School, Nairobi",
+        "county": "Nairobi",
+        "level": "Secondary",
+        "enrollment": 1748,
+        "mean_score": 9.2,
+        "year": 2023
+    },
+    {
+        "school": "Olympic Primary School",
+        "county": "Nairobi",
+        "level": "Primary",
+        "enrollment": 894,
+        "mean_score": 8.5,
+        "year": 2023
+    },
+    {
+        "school": "Maranda High School",
+        "county": "Siaya",
+        "level": "Secondary",
+        "enrollment": 664,
+        "mean_score": 8.0,
+        "year": 2023
+    },
+    {
+        "school": "Kisii Primary School",
+        "county": "Kisii",
+        "level": "Primary",
+        "enrollment": 551,
+        "mean_score": 6.0,
+        "year": 2023
+    },
+    {
+        "school": "Mandera Secondary School",
+        "county": "Mandera",
+        "level": "Secondary",
+        "enrollment": 1706,
+        "mean_score": 9.3,
+        "year": 2023
+    },
+    {
+        "school": "Nairobi School",
+        "county": "Nairobi",
+        "level": "Secondary",
+        "enrollment": 1617,
+        "mean_score": 5.1,
+        "year": 2023
+    },
+    {
+        "school": "Pangani Girls School",
+        "county": "Nairobi",
+        "level": "Secondary",
+        "enrollment": 905,
+        "mean_score": 8.0,
+        "year": 2023
+    },
+    {
+        "school": "Mang'u High School",
+        "county": "Kiambu",
+        "level": "Secondary",
+        "enrollment": 1157,
+        "mean_score": 7.2,
+        "year": 2023
+    },
+    {
+        "school": "Kapsabet Township Primary School",
+        "county": "Nandi",
+        "level": "Primary",
+        "enrollment": 576,
+        "mean_score": 7.5,
+        "year": 2023
+    },
+    {
+        "school": "Kisumu Boys High School",
+        "county": "Kisumu",
+        "level": "Secondary",
+        "enrollment": 1715,
+        "mean_score": 7.6,
+        "year": 2023
+    },
+    {
+        "school": "Embu Primary School",
+        "county": "Embu",
+        "level": "Primary",
+        "enrollment": 875,
+        "mean_score": 6.7,
+        "year": 2023
+    },
+    {
+        "school": "Westlands Primary School",
+        "county": "Nairobi",
+        "level": "Primary",
+        "enrollment": 417,
+        "mean_score": 6.0,
+        "year": 2023
+    },
+    {
+        "school": "Mang'u High School",
+        "county": "Kiambu",
+        "level": "Secondary",
+        "enrollment": 406,
+        "mean_score": 5.9,
+        "year": 2023
+    },
+    {
+        "school": "Maseno School",
+        "county": "Kisumu",
+        "level": "Secondary",
+        "enrollment": 1924,
+        "mean_score": 7.1,
+        "year": 2023
+    },
+    {
+        "school": "Nyeri High School",
+        "county": "Nyeri",
+        "level": "Secondary",
+        "enrollment": 994,
+        "mean_score": 6.5,
+        "year": 2023
+    },
+    {
+        "school": "Westlands Primary School",
+        "county": "Nairobi",
+        "level": "Primary",
+        "enrollment": 524,
+        "mean_score": 8.4,
+        "year": 2023
+    },
+    {
+        "school": "Mang'u High School",
+        "county": "Kiambu",
+        "level": "Secondary",
+        "enrollment": 954,
+        "mean_score": 6.4,
+        "year": 2023
+    },
+    {
+        "school": "Homa Bay Primary School",
+        "county": "Homa Bay",
+        "level": "Primary",
+        "enrollment": 834,
+        "mean_score": 6.2,
+        "year": 2023
+    },
+    {
+        "school": "Maseno School",
+        "county": "Kisumu",
+        "level": "Secondary",
+        "enrollment": 933,
+        "mean_score": 5.6,
+        "year": 2023
+    },
+    {
+        "school": "Voi Primary School",
+        "county": "Taita Taveta",
+        "level": "Primary",
+        "enrollment": 746,
+        "mean_score": 7.4,
+        "year": 2023
+    },
+    {
+        "school": "Kapsabet Boys High School",
+        "county": "Nandi",
+        "level": "Secondary",
+        "enrollment": 1297,
+        "mean_score": 8.5,
+        "year": 2023
+    },
+    {
+        "school": "Lenana School",
+        "county": "Nairobi",
+        "level": "Secondary",
+        "enrollment": 576,
+        "mean_score": 5.3,
+        "year": 2023
+    },
+    {
+        "school": "Mang'u High School",
+        "county": "Kiambu",
+        "level": "Secondary",
+        "enrollment": 1266,
+        "mean_score": 8.5,
+        "year": 2023
+    },
+    {
+        "school": "Raha Primary School",
+        "county": "Migori",
+        "level": "Primary",
+        "enrollment": 711,
+        "mean_score": 9.4,
+        "year": 2023
+    },
+    {
+        "school": "Embu Primary School",
+        "county": "Embu",
+        "level": "Primary",
+        "enrollment": 360,
+        "mean_score": 8.4,
+        "year": 2023
+    },
+    {
+        "school": "Raha Primary School",
+        "county": "Migori",
+        "level": "Primary",
+        "enrollment": 865,
+        "mean_score": 5.9,
+        "year": 2023
+    },
+    {
+        "school": "Naivasha Primary School",
+        "county": "Nakuru",
+        "level": "Primary",
+        "enrollment": 696,
+        "mean_score": 7.7,
+        "year": 2023
+    },
+    {
+        "school": "Maseno School",
+        "county": "Kisumu",
+        "level": "Secondary",
+        "enrollment": 1599,
+        "mean_score": 5.8,
+        "year": 2023
+    },
+    {
+        "school": "Raha Primary School",
+        "county": "Migori",
+        "level": "Primary",
+        "enrollment": 793,
+        "mean_score": 9.4,
+        "year": 2023
+    },
+    {
+        "school": "Migori Primary School",
+        "county": "Migori",
+        "level": "Primary",
+        "enrollment": 397,
+        "mean_score": 6.6,
+        "year": 2023
+    },
+    {
+        "school": "Kisumu Boys High School",
+        "county": "Kisumu",
+        "level": "Secondary",
+        "enrollment": 788,
+        "mean_score": 7.9,
+        "year": 2023
+    },
+    {
+        "school": "Homa Bay Primary School",
+        "county": "Homa Bay",
+        "level": "Primary",
+        "enrollment": 861,
+        "mean_score": 6.6,
+        "year": 2023
+    },
+    {
+        "school": "Friends School Kamusinga",
+        "county": "Bungoma",
+        "level": "Secondary",
+        "enrollment": 465,
+        "mean_score": 5.7,
+        "year": 2023
+    },
+    {
+        "school": "Naivasha Primary School",
+        "county": "Nakuru",
+        "level": "Primary",
+        "enrollment": 267,
+        "mean_score": 6.6,
+        "year": 2023
+    },
+    {
+        "school": "Voi Primary School",
+        "county": "Taita Taveta",
+        "level": "Primary",
+        "enrollment": 845,
+        "mean_score": 8.9,
+        "year": 2023
+    },
+    {
+        "school": "Lamu Girls Secondary School",
+        "county": "Lamu",
+        "level": "Secondary",
+        "enrollment": 561,
+        "mean_score": 6.0,
+        "year": 2023
+    },
+    {
+        "school": "Busia Primary School",
+        "county": "Busia",
+        "level": "Primary",
+        "enrollment": 417,
+        "mean_score": 8.4,
+        "year": 2023
+    },
+    {
+        "school": "Westlands Primary School",
+        "county": "Nairobi",
+        "level": "Primary",
+        "enrollment": 418,
+        "mean_score": 7.5,
+        "year": 2023
+    },
+    {
+        "school": "Isiolo Boys High School",
+        "county": "Isiolo",
+        "level": "Secondary",
+        "enrollment": 1920,
+        "mean_score": 5.7,
+        "year": 2023
+    },
+    {
+        "school": "Aga Khan Primary School Nairobi",
+        "county": "Nairobi",
+        "level": "Primary",
+        "enrollment": 200,
+        "mean_score": 7.1,
+        "year": 2023
+    },
+    {
+        "school": "Raha Primary School",
+        "county": "Migori",
+        "level": "Primary",
+        "enrollment": 759,
+        "mean_score": 9.2,
+        "year": 2023
+    },
+    {
+        "school": "Nyeri High School",
+        "county": "Nyeri",
+        "level": "Secondary",
+        "enrollment": 1685,
+        "mean_score": 8.2,
+        "year": 2023
+    },
+    {
+        "school": "Kitui Central Primary School",
+        "county": "Kitui",
+        "level": "Primary",
+        "enrollment": 873,
+        "mean_score": 6.3,
+        "year": 2023
+    },
+    {
+        "school": "Lamu Girls Secondary School",
+        "county": "Lamu",
+        "level": "Secondary",
+        "enrollment": 1355,
+        "mean_score": 7.6,
+        "year": 2023
+    },
+    {
+        "school": "Meru Town Primary School",
+        "county": "Meru",
+        "level": "Primary",
+        "enrollment": 397,
+        "mean_score": 6.2,
+        "year": 2023
+    },
+    {
+        "school": "Bungoma Township Primary School",
+        "county": "Bungoma",
+        "level": "Primary",
+        "enrollment": 354,
+        "mean_score": 5.5,
+        "year": 2023
+    },
+    {
+        "school": "Pangani Girls School",
+        "county": "Nairobi",
+        "level": "Secondary",
+        "enrollment": 1477,
+        "mean_score": 6.4,
+        "year": 2023
+    },
+    {
+        "school": "Lamu Girls Secondary School",
+        "county": "Lamu",
+        "level": "Secondary",
+        "enrollment": 395,
+        "mean_score": 7.0,
+        "year": 2023
+    },
+    {
+        "school": "Aga Khan Primary School Nairobi",
+        "county": "Nairobi",
+        "level": "Primary",
+        "enrollment": 390,
+        "mean_score": 5.7,
+        "year": 2023
+    },
+    {
+        "school": "Aga Khan Primary School Nairobi",
+        "county": "Nairobi",
+        "level": "Primary",
+        "enrollment": 752,
+        "mean_score": 6.9,
+        "year": 2023
+    },
+    {
+        "school": "Nyeri High School",
+        "county": "Nyeri",
+        "level": "Secondary",
+        "enrollment": 1042,
+        "mean_score": 8.2,
+        "year": 2023
+    },
+    {
+        "school": "Kabarnet High School",
+        "county": "Baringo",
+        "level": "Secondary",
+        "enrollment": 319,
+        "mean_score": 6.6,
+        "year": 2023
+    },
+    {
+        "school": "Raha Primary School",
+        "county": "Migori",
+        "level": "Primary",
+        "enrollment": 610,
+        "mean_score": 9.1,
+        "year": 2023
+    },
+    {
+        "school": "Homa Bay Primary School",
+        "county": "Homa Bay",
+        "level": "Primary",
+        "enrollment": 759,
+        "mean_score": 5.2,
+        "year": 2023
+    },
+    {
+        "school": "Voi Primary School",
+        "county": "Taita Taveta",
+        "level": "Primary",
+        "enrollment": 403,
+        "mean_score": 6.8,
+        "year": 2023
+    },
+    {
+        "school": "Kitui Central Primary School",
+        "county": "Kitui",
+        "level": "Primary",
+        "enrollment": 649,
+        "mean_score": 6.9,
+        "year": 2023
+    },
+    {
+        "school": "Habaswein Primary School",
+        "county": "Wajir",
+        "level": "Primary",
+        "enrollment": 591,
+        "mean_score": 8.4,
+        "year": 2023
+    },
+    {
+        "school": "Lamu Girls Secondary School",
+        "county": "Lamu",
+        "level": "Secondary",
+        "enrollment": 1375,
+        "mean_score": 8.3,
+        "year": 2023
+    },
+    {
+        "school": "Meru Town Primary School",
+        "county": "Meru",
+        "level": "Primary",
+        "enrollment": 383,
+        "mean_score": 6.8,
+        "year": 2023
+    },
+    {
+        "school": "Friends School Kamusinga",
+        "county": "Bungoma",
+        "level": "Secondary",
+        "enrollment": 1198,
+        "mean_score": 7.8,
+        "year": 2023
+    },
+    {
+        "school": "Naivasha Primary School",
+        "county": "Nakuru",
+        "level": "Primary",
+        "enrollment": 844,
+        "mean_score": 8.3,
+        "year": 2023
+    },
+    {
+        "school": "Alliance High School",
+        "county": "Kiambu",
+        "level": "Secondary",
+        "enrollment": 1135,
+        "mean_score": 6.0,
+        "year": 2023
+    },
+    {
+        "school": "Kabarnet High School",
+        "county": "Baringo",
+        "level": "Secondary",
+        "enrollment": 1587,
+        "mean_score": 5.8,
+        "year": 2023
+    },
+    {
+        "school": "Likoni Primary School",
+        "county": "Mombasa",
+        "level": "Primary",
+        "enrollment": 567,
+        "mean_score": 5.1,
+        "year": 2023
+    },
+    {
+        "school": "Kitui Central Primary School",
+        "county": "Kitui",
+        "level": "Primary",
+        "enrollment": 627,
+        "mean_score": 5.2,
+        "year": 2023
+    },
+    {
+        "school": "Habaswein Primary School",
+        "county": "Wajir",
+        "level": "Primary",
+        "enrollment": 640,
+        "mean_score": 9.0,
+        "year": 2023
+    },
+    {
+        "school": "Likoni Primary School",
+        "county": "Mombasa",
+        "level": "Primary",
+        "enrollment": 340,
+        "mean_score": 6.0,
+        "year": 2023
+    },
+    {
+        "school": "Alliance High School",
+        "county": "Kiambu",
+        "level": "Secondary",
+        "enrollment": 385,
+        "mean_score": 9.4,
+        "year": 2023
+    },
+    {
+        "school": "Likoni Primary School",
+        "county": "Mombasa",
+        "level": "Primary",
+        "enrollment": 383,
+        "mean_score": 7.9,
+        "year": 2023
+    },
+    {
+        "school": "Isiolo Boys High School",
+        "county": "Isiolo",
+        "level": "Secondary",
+        "enrollment": 1645,
+        "mean_score": 8.7,
+        "year": 2023
+    },
+    {
+        "school": "Maranda High School",
+        "county": "Siaya",
+        "level": "Secondary",
+        "enrollment": 1074,
+        "mean_score": 7.4,
+        "year": 2023
+    },
+    {
+        "school": "Pangani Girls School",
+        "county": "Nairobi",
+        "level": "Secondary",
+        "enrollment": 663,
+        "mean_score": 7.6,
+        "year": 2023
+    },
+    {
+        "school": "Moi Girls High School Eldoret",
+        "county": "Uasin Gishu",
+        "level": "Secondary",
+        "enrollment": 1916,
+        "mean_score": 5.4,
+        "year": 2023
+    },
+    {
+        "school": "Raha Primary School",
+        "county": "Migori",
+        "level": "Primary",
+        "enrollment": 453,
+        "mean_score": 5.5,
+        "year": 2023
+    },
+    {
+        "school": "Embu Primary School",
+        "county": "Embu",
+        "level": "Primary",
+        "enrollment": 431,
+        "mean_score": 8.0,
+        "year": 2023
+    },
+    {
+        "school": "Nairobi School",
+        "county": "Nairobi",
+        "level": "Secondary",
+        "enrollment": 1185,
+        "mean_score": 8.1,
+        "year": 2023
+    },
+    {
+        "school": "Pangani Girls School",
+        "county": "Nairobi",
+        "level": "Secondary",
+        "enrollment": 1619,
+        "mean_score": 5.1,
+        "year": 2023
+    },
+    {
+        "school": "Moi Primary School Kasarani",
+        "county": "Nairobi",
+        "level": "Primary",
+        "enrollment": 326,
+        "mean_score": 8.1,
+        "year": 2023
+    },
+    {
+        "school": "Moi Girls High School Eldoret",
+        "county": "Uasin Gishu",
+        "level": "Secondary",
+        "enrollment": 1579,
+        "mean_score": 6.6,
+        "year": 2023
+    },
+    {
+        "school": "Moi Girls High School Eldoret",
+        "county": "Uasin Gishu",
+        "level": "Secondary",
+        "enrollment": 1703,
+        "mean_score": 6.2,
+        "year": 2023
+    },
+    {
+        "school": "Pangani Girls School",
+        "county": "Nairobi",
+        "level": "Secondary",
+        "enrollment": 1075,
+        "mean_score": 8.6,
+        "year": 2023
+    },
+    {
+        "school": "Olympic Primary School",
+        "county": "Nairobi",
+        "level": "Primary",
+        "enrollment": 435,
+        "mean_score": 7.2,
+        "year": 2023
+    },
+    {
+        "school": "Kapsabet Township Primary School",
+        "county": "Nandi",
+        "level": "Primary",
+        "enrollment": 886,
+        "mean_score": 6.3,
+        "year": 2023
+    },
+    {
+        "school": "Maranda High School",
+        "county": "Siaya",
+        "level": "Secondary",
+        "enrollment": 788,
+        "mean_score": 8.9,
+        "year": 2023
+    },
+    {
+        "school": "Raha Primary School",
+        "county": "Migori",
+        "level": "Primary",
+        "enrollment": 336,
+        "mean_score": 8.8,
+        "year": 2023
+    },
+    {
+        "school": "Lenana School",
+        "county": "Nairobi",
+        "level": "Secondary",
+        "enrollment": 1554,
+        "mean_score": 8.5,
+        "year": 2023
+    },
+    {
+        "school": "Isiolo Boys High School",
+        "county": "Isiolo",
+        "level": "Secondary",
+        "enrollment": 1130,
+        "mean_score": 8.1,
+        "year": 2023
+    },
+    {
+        "school": "Maseno School",
+        "county": "Kisumu",
+        "level": "Secondary",
+        "enrollment": 1852,
+        "mean_score": 7.5,
+        "year": 2023
+    },
+    {
+        "school": "Maranda High School",
+        "county": "Siaya",
+        "level": "Secondary",
+        "enrollment": 323,
+        "mean_score": 8.9,
+        "year": 2023
+    },
+    {
+        "school": "Moi Primary School Kasarani",
+        "county": "Nairobi",
+        "level": "Primary",
+        "enrollment": 479,
+        "mean_score": 7.4,
+        "year": 2023
+    },
+    {
+        "school": "Moi Primary School Kasarani",
+        "county": "Nairobi",
+        "level": "Primary",
+        "enrollment": 705,
+        "mean_score": 9.2,
+        "year": 2023
+    },
+    {
+        "school": "Embu Primary School",
+        "county": "Embu",
+        "level": "Primary",
+        "enrollment": 458,
+        "mean_score": 8.3,
+        "year": 2023
+    },
+    {
+        "school": "Kitui Central Primary School",
+        "county": "Kitui",
+        "level": "Primary",
+        "enrollment": 690,
+        "mean_score": 5.8,
+        "year": 2023
+    },
+    {
+        "school": "Habaswein Primary School",
+        "county": "Wajir",
+        "level": "Primary",
+        "enrollment": 306,
+        "mean_score": 5.4,
+        "year": 2023
+    },
+    {
+        "school": "Voi Primary School",
+        "county": "Taita Taveta",
+        "level": "Primary",
+        "enrollment": 377,
+        "mean_score": 8.6,
+        "year": 2023
+    },
+    {
+        "school": "Busia Primary School",
+        "county": "Busia",
+        "level": "Primary",
+        "enrollment": 883,
+        "mean_score": 8.6,
+        "year": 2023
+    },
+    {
+        "school": "Nyeri High School",
+        "county": "Nyeri",
+        "level": "Secondary",
+        "enrollment": 1739,
+        "mean_score": 9.2,
+        "year": 2023
+    },
+    {
+        "school": "Pangani Girls School",
+        "county": "Nairobi",
+        "level": "Secondary",
+        "enrollment": 1610,
+        "mean_score": 8.4,
+        "year": 2023
+    },
+    {
+        "school": "Meru Town Primary School",
+        "county": "Meru",
+        "level": "Primary",
+        "enrollment": 248,
+        "mean_score": 7.7,
+        "year": 2023
+    },
+    {
+        "school": "Mandera Secondary School",
+        "county": "Mandera",
+        "level": "Secondary",
+        "enrollment": 1516,
+        "mean_score": 6.8,
+        "year": 2023
+    },
+    {
+        "school": "Pangani Girls School",
+        "county": "Nairobi",
+        "level": "Secondary",
+        "enrollment": 1343,
+        "mean_score": 5.3,
+        "year": 2023
+    },
+    {
+        "school": "Busia Primary School",
+        "county": "Busia",
+        "level": "Primary",
+        "enrollment": 226,
+        "mean_score": 7.3,
+        "year": 2023
+    },
+    {
+        "school": "Olympic Primary School",
+        "county": "Nairobi",
+        "level": "Primary",
+        "enrollment": 580,
+        "mean_score": 9.0,
+        "year": 2023
+    },
+    {
+        "school": "Mandera Secondary School",
+        "county": "Mandera",
+        "level": "Secondary",
+        "enrollment": 1858,
+        "mean_score": 7.8,
+        "year": 2023
+    },
+    {
+        "school": "Likoni Primary School",
+        "county": "Mombasa",
+        "level": "Primary",
+        "enrollment": 315,
+        "mean_score": 6.3,
+        "year": 2023
+    },
+    {
+        "school": "Migori Primary School",
+        "county": "Migori",
+        "level": "Primary",
+        "enrollment": 791,
+        "mean_score": 5.0,
+        "year": 2023
+    },
+    {
+        "school": "Lamu Girls Secondary School",
+        "county": "Lamu",
+        "level": "Secondary",
+        "enrollment": 1144,
+        "mean_score": 5.4,
+        "year": 2023
+    },
+    {
+        "school": "Maranda High School",
+        "county": "Siaya",
+        "level": "Secondary",
+        "enrollment": 779,
+        "mean_score": 5.1,
+        "year": 2023
+    },
+    {
+        "school": "Mang'u High School",
+        "county": "Kiambu",
+        "level": "Secondary",
+        "enrollment": 589,
+        "mean_score": 7.9,
+        "year": 2023
+    },
+    {
+        "school": "Kehancha Primary School",
+        "county": "Migori",
+        "level": "Primary",
+        "enrollment": 697,
+        "mean_score": 9.3,
+        "year": 2023
+    },
+    {
+        "school": "Mandera Secondary School",
+        "county": "Mandera",
+        "level": "Secondary",
+        "enrollment": 328,
+        "mean_score": 6.1,
+        "year": 2023
+    },
+    {
+        "school": "Raha Primary School",
+        "county": "Migori",
+        "level": "Primary",
+        "enrollment": 869,
+        "mean_score": 5.9,
+        "year": 2023
+    },
+    {
+        "school": "Likoni Primary School",
+        "county": "Mombasa",
+        "level": "Primary",
+        "enrollment": 456,
+        "mean_score": 6.4,
+        "year": 2023
+    },
+    {
+        "school": "Lenana School",
+        "county": "Nairobi",
+        "level": "Secondary",
+        "enrollment": 1127,
+        "mean_score": 5.2,
+        "year": 2023
+    },
+    {
+        "school": "Busia Primary School",
+        "county": "Busia",
+        "level": "Primary",
+        "enrollment": 896,
+        "mean_score": 6.5,
+        "year": 2023
+    },
+    {
+        "school": "Busia Primary School",
+        "county": "Busia",
+        "level": "Primary",
+        "enrollment": 844,
+        "mean_score": 9.1,
+        "year": 2023
+    },
+    {
+        "school": "Nairobi School",
+        "county": "Nairobi",
+        "level": "Secondary",
+        "enrollment": 1238,
+        "mean_score": 9.5,
+        "year": 2023
+    },
+    {
+        "school": "Likoni Primary School",
+        "county": "Mombasa",
+        "level": "Primary",
+        "enrollment": 812,
+        "mean_score": 7.6,
+        "year": 2023
+    },
+    {
+        "school": "Nyeri Township Primary School",
+        "county": "Nyeri",
+        "level": "Primary",
+        "enrollment": 360,
+        "mean_score": 9.5,
+        "year": 2023
+    },
+    {
+        "school": "Isiolo Boys High School",
+        "county": "Isiolo",
+        "level": "Secondary",
+        "enrollment": 1177,
+        "mean_score": 8.9,
+        "year": 2023
+    },
+    {
+        "school": "Kapsabet Township Primary School",
+        "county": "Nandi",
+        "level": "Primary",
+        "enrollment": 480,
+        "mean_score": 9.0,
+        "year": 2023
+    },
+    {
+        "school": "Isiolo Boys High School",
+        "county": "Isiolo",
+        "level": "Secondary",
+        "enrollment": 1560,
+        "mean_score": 6.6,
+        "year": 2023
+    },
+    {
+        "school": "Lamu Girls Secondary School",
+        "county": "Lamu",
+        "level": "Secondary",
+        "enrollment": 1890,
+        "mean_score": 8.9,
+        "year": 2023
+    },
+    {
+        "school": "Kisumu Boys High School",
+        "county": "Kisumu",
+        "level": "Secondary",
+        "enrollment": 1799,
+        "mean_score": 6.1,
+        "year": 2023
+    },
+    {
+        "school": "Pangani Girls School",
+        "county": "Nairobi",
+        "level": "Secondary",
+        "enrollment": 962,
+        "mean_score": 7.7,
+        "year": 2023
+    },
+    {
+        "school": "Kisumu Boys High School",
+        "county": "Kisumu",
+        "level": "Secondary",
+        "enrollment": 1962,
+        "mean_score": 8.8,
+        "year": 2023
+    },
+    {
+        "school": "Maranda High School",
+        "county": "Siaya",
+        "level": "Secondary",
+        "enrollment": 1382,
+        "mean_score": 7.8,
+        "year": 2023
+    },
+    {
+        "school": "Maranda High School",
+        "county": "Siaya",
+        "level": "Secondary",
+        "enrollment": 1750,
+        "mean_score": 9.4,
+        "year": 2023
+    },
+    {
+        "school": "Alliance High School",
+        "county": "Kiambu",
+        "level": "Secondary",
+        "enrollment": 639,
+        "mean_score": 7.2,
+        "year": 2023
+    },
+    {
+        "school": "Kitui Central Primary School",
+        "county": "Kitui",
+        "level": "Primary",
+        "enrollment": 327,
+        "mean_score": 7.0,
+        "year": 2023
+    },
+    {
+        "school": "Alliance High School",
+        "county": "Kiambu",
+        "level": "Secondary",
+        "enrollment": 1666,
+        "mean_score": 7.3,
+        "year": 2023
+    },
+    {
+        "school": "Alliance High School",
+        "county": "Kiambu",
+        "level": "Secondary",
+        "enrollment": 1479,
+        "mean_score": 9.4,
+        "year": 2023
+    },
+    {
+        "school": "Kisii Primary School",
+        "county": "Kisii",
+        "level": "Primary",
+        "enrollment": 400,
+        "mean_score": 5.8,
+        "year": 2023
+    },
+    {
+        "school": "Homa Bay Primary School",
+        "county": "Homa Bay",
+        "level": "Primary",
+        "enrollment": 686,
+        "mean_score": 7.1,
+        "year": 2023
+    },
+    {
+        "school": "Likoni Primary School",
+        "county": "Mombasa",
+        "level": "Primary",
+        "enrollment": 384,
+        "mean_score": 7.3,
+        "year": 2023
+    },
+    {
+        "school": "St. Mary's School, Nairobi",
+        "county": "Nairobi",
+        "level": "Secondary",
+        "enrollment": 1037,
+        "mean_score": 7.1,
+        "year": 2023
+    },
+    {
+        "school": "Habaswein Primary School",
+        "county": "Wajir",
+        "level": "Primary",
+        "enrollment": 544,
+        "mean_score": 8.9,
+        "year": 2023
+    },
+    {
+        "school": "Isiolo Boys High School",
+        "county": "Isiolo",
+        "level": "Secondary",
+        "enrollment": 1959,
+        "mean_score": 6.0,
+        "year": 2023
+    },
+    {
+        "school": "Habaswein Primary School",
+        "county": "Wajir",
+        "level": "Primary",
+        "enrollment": 611,
+        "mean_score": 6.2,
+        "year": 2023
+    },
+    {
+        "school": "St. Mary's School, Nairobi",
+        "county": "Nairobi",
+        "level": "Secondary",
+        "enrollment": 328,
+        "mean_score": 9.1,
+        "year": 2023
+    },
+    {
+        "school": "Raha Primary School",
+        "county": "Migori",
+        "level": "Primary",
+        "enrollment": 376,
+        "mean_score": 6.0,
+        "year": 2023
+    },
+    {
+        "school": "Maseno School",
+        "county": "Kisumu",
+        "level": "Secondary",
+        "enrollment": 716,
+        "mean_score": 6.5,
+        "year": 2023
+    },
+    {
+        "school": "Lamu Girls Secondary School",
+        "county": "Lamu",
+        "level": "Secondary",
+        "enrollment": 589,
+        "mean_score": 5.7,
+        "year": 2023
+    },
+    {
+        "school": "Likoni Primary School",
+        "county": "Mombasa",
+        "level": "Primary",
+        "enrollment": 526,
+        "mean_score": 6.8,
+        "year": 2023
+    },
+    {
+        "school": "Mandera Secondary School",
+        "county": "Mandera",
+        "level": "Secondary",
+        "enrollment": 621,
+        "mean_score": 9.3,
+        "year": 2023
+    },
+    {
+        "school": "Embu Primary School",
+        "county": "Embu",
+        "level": "Primary",
+        "enrollment": 718,
+        "mean_score": 9.3,
+        "year": 2023
+    },
+    {
+        "school": "Voi Primary School",
+        "county": "Taita Taveta",
+        "level": "Primary",
+        "enrollment": 711,
+        "mean_score": 9.1,
+        "year": 2023
+    },
+    {
+        "school": "Kapsabet Township Primary School",
+        "county": "Nandi",
+        "level": "Primary",
+        "enrollment": 736,
+        "mean_score": 7.0,
+        "year": 2023
+    },
+    {
+        "school": "Friends School Kamusinga",
+        "county": "Bungoma",
+        "level": "Secondary",
+        "enrollment": 1683,
+        "mean_score": 5.5,
+        "year": 2023
+    },
+    {
+        "school": "Alliance High School",
+        "county": "Kiambu",
+        "level": "Secondary",
+        "enrollment": 885,
+        "mean_score": 6.0,
+        "year": 2023
+    },
+    {
+        "school": "Isiolo Boys High School",
+        "county": "Isiolo",
+        "level": "Secondary",
+        "enrollment": 1363,
+        "mean_score": 8.8,
+        "year": 2023
+    },
+    {
+        "school": "Nyeri High School",
+        "county": "Nyeri",
+        "level": "Secondary",
+        "enrollment": 504,
+        "mean_score": 8.6,
+        "year": 2023
+    },
+    {
+        "school": "Moi Primary School Kasarani",
+        "county": "Nairobi",
+        "level": "Primary",
+        "enrollment": 419,
+        "mean_score": 6.8,
+        "year": 2023
+    },
+    {
+        "school": "Maranda High School",
+        "county": "Siaya",
+        "level": "Secondary",
+        "enrollment": 1091,
+        "mean_score": 7.0,
+        "year": 2023
+    },
+    {
+        "school": "Mandera Secondary School",
+        "county": "Mandera",
+        "level": "Secondary",
+        "enrollment": 738,
+        "mean_score": 8.5,
+        "year": 2023
+    },
+    {
+        "school": "Maseno School",
+        "county": "Kisumu",
+        "level": "Secondary",
+        "enrollment": 1848,
+        "mean_score": 5.4,
+        "year": 2023
+    },
+    {
+        "school": "Aga Khan Primary School Nairobi",
+        "county": "Nairobi",
+        "level": "Primary",
+        "enrollment": 287,
+        "mean_score": 8.7,
+        "year": 2023
+    },
+    {
+        "school": "Bungoma Township Primary School",
+        "county": "Bungoma",
+        "level": "Primary",
+        "enrollment": 452,
+        "mean_score": 8.7,
+        "year": 2023
+    },
+    {
+        "school": "Olympic Primary School",
+        "county": "Nairobi",
+        "level": "Primary",
+        "enrollment": 253,
+        "mean_score": 5.4,
+        "year": 2023
+    },
+    {
+        "school": "Moi Primary School Kasarani",
+        "county": "Nairobi",
+        "level": "Primary",
+        "enrollment": 461,
+        "mean_score": 6.1,
+        "year": 2023
+    },
+    {
+        "school": "Lenana School",
+        "county": "Nairobi",
+        "level": "Secondary",
+        "enrollment": 316,
+        "mean_score": 9.4,
+        "year": 2023
+    },
+    {
+        "school": "Migori Primary School",
+        "county": "Migori",
+        "level": "Primary",
+        "enrollment": 900,
+        "mean_score": 6.1,
+        "year": 2023
+    },
+    {
+        "school": "Nairobi School",
+        "county": "Nairobi",
+        "level": "Secondary",
+        "enrollment": 1393,
+        "mean_score": 6.5,
+        "year": 2023
+    },
+    {
+        "school": "Busia Primary School",
+        "county": "Busia",
+        "level": "Primary",
+        "enrollment": 291,
+        "mean_score": 9.2,
+        "year": 2023
+    },
+    {
+        "school": "Maranda High School",
+        "county": "Siaya",
+        "level": "Secondary",
+        "enrollment": 642,
+        "mean_score": 6.7,
+        "year": 2023
+    },
+    {
+        "school": "Moi Primary School Kasarani",
+        "county": "Nairobi",
+        "level": "Primary",
+        "enrollment": 579,
+        "mean_score": 7.1,
+        "year": 2023
+    },
+    {
+        "school": "Maranda High School",
+        "county": "Siaya",
+        "level": "Secondary",
+        "enrollment": 688,
+        "mean_score": 9.4,
+        "year": 2023
+    },
+    {
+        "school": "Kabarnet High School",
+        "county": "Baringo",
+        "level": "Secondary",
+        "enrollment": 818,
+        "mean_score": 5.4,
+        "year": 2023
+    },
+    {
+        "school": "Mang'u High School",
+        "county": "Kiambu",
+        "level": "Secondary",
+        "enrollment": 1718,
+        "mean_score": 7.3,
+        "year": 2023
+    },
+    {
+        "school": "Isiolo Boys High School",
+        "county": "Isiolo",
+        "level": "Secondary",
+        "enrollment": 471,
+        "mean_score": 5.4,
+        "year": 2023
+    },
+    {
+        "school": "Mandera Secondary School",
+        "county": "Mandera",
+        "level": "Secondary",
+        "enrollment": 337,
+        "mean_score": 6.7,
+        "year": 2023
+    },
+    {
+        "school": "Embu Primary School",
+        "county": "Embu",
+        "level": "Primary",
+        "enrollment": 707,
+        "mean_score": 8.6,
+        "year": 2023
+    },
+    {
+        "school": "Garissa High School",
+        "county": "Garissa",
+        "level": "Secondary",
+        "enrollment": 784,
+        "mean_score": 9.0,
+        "year": 2023
+    },
+    {
+        "school": "Nyeri High School",
+        "county": "Nyeri",
+        "level": "Secondary",
+        "enrollment": 1384,
+        "mean_score": 6.6,
+        "year": 2023
+    },
+    {
+        "school": "Kitui Central Primary School",
+        "county": "Kitui",
+        "level": "Primary",
+        "enrollment": 439,
+        "mean_score": 5.9,
+        "year": 2023
+    },
+    {
+        "school": "Pangani Girls School",
+        "county": "Nairobi",
+        "level": "Secondary",
+        "enrollment": 1526,
+        "mean_score": 6.2,
+        "year": 2023
+    },
+    {
+        "school": "Narok Boys High School",
+        "county": "Narok",
+        "level": "Secondary",
+        "enrollment": 1276,
+        "mean_score": 7.2,
+        "year": 2023
+    },
+    {
+        "school": "Maseno School",
+        "county": "Kisumu",
+        "level": "Secondary",
+        "enrollment": 707,
+        "mean_score": 6.0,
+        "year": 2023
+    },
+    {
+        "school": "Kabarnet High School",
+        "county": "Baringo",
+        "level": "Secondary",
+        "enrollment": 1060,
+        "mean_score": 5.7,
+        "year": 2023
+    },
+    {
+        "school": "Moi Primary School Kasarani",
+        "county": "Nairobi",
+        "level": "Primary",
+        "enrollment": 221,
+        "mean_score": 6.6,
+        "year": 2023
+    },
+    {
+        "school": "Maseno School",
+        "county": "Kisumu",
+        "level": "Secondary",
+        "enrollment": 1334,
+        "mean_score": 6.8,
+        "year": 2023
+    },
+    {
+        "school": "Aga Khan Primary School Nairobi",
+        "county": "Nairobi",
+        "level": "Primary",
+        "enrollment": 477,
+        "mean_score": 8.9,
+        "year": 2023
+    },
+    {
+        "school": "Moi Girls High School Eldoret",
+        "county": "Uasin Gishu",
+        "level": "Secondary",
+        "enrollment": 491,
+        "mean_score": 6.9,
+        "year": 2023
+    },
+    {
+        "school": "Alliance Girls High School",
+        "county": "Kiambu",
+        "level": "Secondary",
+        "enrollment": 737,
+        "mean_score": 5.8,
+        "year": 2023
+    },
+    {
+        "school": "Maranda High School",
+        "county": "Siaya",
+        "level": "Secondary",
+        "enrollment": 1129,
+        "mean_score": 5.7,
+        "year": 2023
+    },
+    {
+        "school": "Friends School Kamusinga",
+        "county": "Bungoma",
+        "level": "Secondary",
+        "enrollment": 765,
+        "mean_score": 8.2,
+        "year": 2023
+    },
+    {
+        "school": "Friends School Kamusinga",
+        "county": "Bungoma",
+        "level": "Secondary",
+        "enrollment": 589,
+        "mean_score": 7.8,
+        "year": 2023
+    },
+    {
+        "school": "St. Mary's School, Nairobi",
+        "county": "Nairobi",
+        "level": "Secondary",
+        "enrollment": 1761,
+        "mean_score": 9.2,
+        "year": 2023
+    },
+    {
+        "school": "Isiolo Boys High School",
+        "county": "Isiolo",
+        "level": "Secondary",
+        "enrollment": 654,
+        "mean_score": 5.4,
+        "year": 2023
+    },
+    {
+        "school": "Lamu Girls Secondary School",
+        "county": "Lamu",
+        "level": "Secondary",
+        "enrollment": 1506,
+        "mean_score": 9.3,
+        "year": 2023
+    },
+    {
+        "school": "Kehancha Primary School",
+        "county": "Migori",
+        "level": "Primary",
+        "enrollment": 889,
+        "mean_score": 7.3,
+        "year": 2023
+    },
+    {
+        "school": "Kapsabet Township Primary School",
+        "county": "Nandi",
+        "level": "Primary",
+        "enrollment": 358,
+        "mean_score": 6.6,
+        "year": 2023
+    },
+    {
+        "school": "Nairobi School",
+        "county": "Nairobi",
+        "level": "Secondary",
+        "enrollment": 1285,
+        "mean_score": 9.0,
+        "year": 2023
+    },
+    {
+        "school": "Moi Girls High School Eldoret",
+        "county": "Uasin Gishu",
+        "level": "Secondary",
+        "enrollment": 487,
+        "mean_score": 8.9,
+        "year": 2023
+    },
+    {
+        "school": "Embu Primary School",
+        "county": "Embu",
+        "level": "Primary",
+        "enrollment": 493,
+        "mean_score": 7.7,
+        "year": 2023
+    },
+    {
+        "school": "Kapsabet Boys High School",
+        "county": "Nandi",
+        "level": "Secondary",
+        "enrollment": 703,
+        "mean_score": 8.5,
+        "year": 2023
+    },
+    {
+        "school": "Alliance High School",
+        "county": "Kiambu",
+        "level": "Secondary",
+        "enrollment": 641,
+        "mean_score": 9.5,
+        "year": 2023
+    },
+    {
+        "school": "Isiolo Boys High School",
+        "county": "Isiolo",
+        "level": "Secondary",
+        "enrollment": 486,
+        "mean_score": 6.2,
+        "year": 2023
+    },
+    {
+        "school": "Migori Primary School",
+        "county": "Migori",
+        "level": "Primary",
+        "enrollment": 298,
+        "mean_score": 9.0,
+        "year": 2023
+    },
+    {
+        "school": "St. Mary's School, Nairobi",
+        "county": "Nairobi",
+        "level": "Secondary",
+        "enrollment": 1632,
+        "mean_score": 7.7,
+        "year": 2023
+    },
+    {
+        "school": "Bungoma Township Primary School",
+        "county": "Bungoma",
+        "level": "Primary",
+        "enrollment": 734,
+        "mean_score": 7.3,
+        "year": 2023
+    },
+    {
+        "school": "Mang'u High School",
+        "county": "Kiambu",
+        "level": "Secondary",
+        "enrollment": 620,
+        "mean_score": 9.1,
+        "year": 2023
+    },
+    {
+        "school": "Embu Primary School",
+        "county": "Embu",
+        "level": "Primary",
+        "enrollment": 798,
+        "mean_score": 6.6,
+        "year": 2023
+    },
+    {
+        "school": "Kapsabet Township Primary School",
+        "county": "Nandi",
+        "level": "Primary",
+        "enrollment": 607,
+        "mean_score": 8.3,
+        "year": 2023
+    },
+    {
+        "school": "Voi Primary School",
+        "county": "Taita Taveta",
+        "level": "Primary",
+        "enrollment": 709,
+        "mean_score": 5.7,
+        "year": 2023
+    },
+    {
+        "school": "Aga Khan Primary School Nairobi",
+        "county": "Nairobi",
+        "level": "Primary",
+        "enrollment": 387,
+        "mean_score": 9.0,
+        "year": 2023
+    },
+    {
+        "school": "Migori Primary School",
+        "county": "Migori",
+        "level": "Primary",
+        "enrollment": 615,
+        "mean_score": 8.8,
+        "year": 2023
+    },
+    {
+        "school": "Kisii Primary School",
+        "county": "Kisii",
+        "level": "Primary",
+        "enrollment": 686,
+        "mean_score": 5.6,
+        "year": 2023
+    },
+    {
+        "school": "Maseno School",
+        "county": "Kisumu",
+        "level": "Secondary",
+        "enrollment": 1024,
+        "mean_score": 5.9,
+        "year": 2023
+    },
+    {
+        "school": "Kitui Central Primary School",
+        "county": "Kitui",
+        "level": "Primary",
+        "enrollment": 598,
+        "mean_score": 6.8,
+        "year": 2023
+    },
+    {
+        "school": "Lenana School",
+        "county": "Nairobi",
+        "level": "Secondary",
+        "enrollment": 390,
+        "mean_score": 8.2,
+        "year": 2023
+    },
+    {
+        "school": "Mandera Secondary School",
+        "county": "Mandera",
+        "level": "Secondary",
+        "enrollment": 1880,
+        "mean_score": 7.0,
+        "year": 2023
+    },
+    {
+        "school": "Nyeri Township Primary School",
+        "county": "Nyeri",
+        "level": "Primary",
+        "enrollment": 206,
+        "mean_score": 5.1,
         "year": 2023
     }
 ]
