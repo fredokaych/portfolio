@@ -70,10 +70,17 @@ function checkPalindrome() {
 const canvas = document.getElementById('canvas-bg');
 const ctx = canvas.getContext('2d');
 let particlesArray;
+let mouse = { x: null, y: null, radius: 100 };
 
 // Resize Canvas
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
+
+// Track mouse
+window.addEventListener('mousemove', (event) => {
+    mouse.x = event.x;
+    mouse.y = event.y;
+});
 
 class Particle {
     constructor(x, y, directionX, directionY, size, color) {
@@ -93,10 +100,31 @@ class Particle {
     }
     // Update particle position
     update() {
+        // Bounce off edges
         if (this.x > canvas.width || this.x < 0) this.directionX = -this.directionX;
         if (this.y > canvas.height || this.y < 0) this.directionY = -this.directionY;
+        // Move particle
         this.x += this.directionX;
         this.y += this.directionY;
+
+        // Mouse interaction - simple repulsion
+        let dx = mouse.x - this.x;
+        let dy = mouse.y - this.y;
+        let distance = Math.sqrt(dx * dx + dy * dy);
+
+        if (distance < mouse.radius + this.size) {
+            // Move particle away from mouse
+            let angle = Math.atan2(dy, dx);
+            let force = (mouse.radius - distance) / mouse.radius;
+            this.directionX -= force * Math.cos(angle) * 0.5;
+            this.directionY -= force * Math.sin(angle) * 0.5;
+        }
+
+        // Slow particles back to original speed
+        this.directionX *= 0.95;
+        this.directionY *= 0.95;
+
+
         this.draw();
     }
 }
