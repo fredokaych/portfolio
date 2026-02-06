@@ -507,6 +507,99 @@
             font-size: 0.85rem;
         }
 
+        /* =========================
+   Partners / Logos Section
+   ========================= */
+        .partners {
+            padding: 4rem 0;
+            overflow: hidden;
+            background: #0f172a;
+            /* dark background */
+            text-align: center;
+        }
+
+        .partners h2 {
+            margin-bottom: 2rem;
+            font-size: 1.8rem;
+            color: #e5e7eb;
+        }
+
+        /* Slider container */
+        .logo-slider {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        /* Track */
+        .logo-track {
+            display: flex;
+            width: calc(200px * 12);
+            /* adjust if you add/remove logos */
+            animation: scroll-left 30s linear infinite;
+        }
+
+        /* Logos */
+        .logo-track img {
+            width: 180px;
+            height: auto;
+            margin: 0 2rem;
+            filter: grayscale(100%);
+            opacity: 0.75;
+            transition: all 0.3s ease;
+        }
+
+        /* Hover effect */
+        .logo-track img:hover {
+            filter: grayscale(0%);
+            opacity: 1;
+            transform: scale(1.05);
+        }
+
+        .logo-slider:hover .logo-track {
+            animation-play-state: paused;
+        }
+
+        /* Animation */
+        @keyframes scroll-left {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+        /* Fade mask effect */
+        .logo-slider::before,
+        .logo-slider::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            width: 80px;
+            height: 100%;
+            z-index: 2;
+            pointer-events: none;
+        }
+
+        .logo-slider::before {
+            left: 0;
+            background: linear-gradient(to right,
+                    #0f172a 0%,
+                    rgba(15, 23, 42, 0) 100%);
+        }
+
+        .logo-slider::after {
+            right: 0;
+            background: linear-gradient(to left,
+                    #0f172a 0%,
+                    rgba(15, 23, 42, 0) 100%);
+        }
+
+
+
+
         /* =========================================
            RESPONSIVE
            ========================================= */
