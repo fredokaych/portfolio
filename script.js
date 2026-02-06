@@ -102,12 +102,33 @@ class Particle {
     }
     // Update particle position
     update() {
-        // Bounce off edges
-        if (this.x > canvas.width || this.x < 0) this.directionX = -this.directionX;
-        if (this.y > canvas.height || this.y < 0) this.directionY = -this.directionY;
         // Move particle
         this.x += this.directionX;
         this.y += this.directionY;
+
+        // Bounce off edges
+        // if (this.x > canvas.width || this.x < 0) this.directionX = -this.directionX;
+        // if (this.y > canvas.height || this.y < 0) this.directionY = -this.directionY;
+
+        // Bounce off edges properly, considering particle size
+        if (this.x + this.size > canvas.width) {
+            this.x = canvas.width - this.size;
+            this.directionX = -this.directionX;
+        }
+        if (this.x - this.size < 0) {
+            this.x = this.size;
+            this.directionX = -this.directionX;
+        }
+
+        if (this.y + this.size > canvas.height) {
+            this.y = canvas.height - this.size;
+            this.directionY = -this.directionY;
+        }
+        if (this.y - this.size < 0) {
+            this.y = this.size;
+            this.directionY = -this.directionY;
+        }
+
 
         // Mouse interaction - simple repulsion
         let dx = mouse.x - this.x;
