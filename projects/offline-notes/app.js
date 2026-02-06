@@ -19,19 +19,30 @@ saveBtn.addEventListener("click", () => {
     const text = noteText.value.trim();
     if (!text) return;
 
-    const note = {
-        id: Date.now(),
-        text,
-        synced: navigator.onLine
-    };
+    // Check if editing an existing note
+    if (noteText.dataset.editId) {
+        const editId = parseInt(noteText.dataset.editId);
+        notes = notes.map(n => n.id === editId ? { ...n, text, synced: navigator.onLine } : n);
+        if (!navigator.onLine) {
+            const note = notes.find(n => n.id === editId);
+            syncQueue.push(note);
+        }
+        delete noteText.dataset.editId;
+    } else {
+        const note = {
+            id: Date.now(),
+            text,
+            synced: navigator.onLine
+        };
+        notes.push(note);
 
-    notes.push(note);
-    localStorage.setItem("notes", JSON.stringify(notes));
-
-    if (!navigator.onLine) {
-        syncQueue.push(note);
-        localStorage.setItem("syncQueue", JSON.stringify(syncQueue));
+        if (!navigator.onLine) {
+            syncQueue.push(note);
+        }
     }
+
+    localStorage.setItem("notes", JSON.stringify(notes));
+    localStorage.setItem("syncQueue", JSON.stringify(syncQueue));
 
     noteText.value = "";
     render();
@@ -52,11 +63,40 @@ function render() {
     notesList.innerHTML = "";
     notes.forEach(n => {
         const li = document.createElement("li");
-        li.textContent = n.text + (n.synced ? "" : " (pending sync)");
+
+        li.innerHTML = `
+            <span>${n.text} ${n.synced ? "" : "(pending sync)"}</span>
+            <div class="note-actions">
+                <button class="edit-btn" data-id="${n.id}">Edit</button>
+                <button class="delete-btn" data-id="${n.id}">Delete</button>
+            </div>
+        `;
+
         notesList.appendChild(li);
     });
 
     queueCountEl.textContent = syncQueue.length;
+
+    // Add event listeners for new buttons
+    document.querySelectorAll(".edit-btn").forEach(btn => {
+        btn.addEventListener("click", () => {
+            const id = parseInt(btn.dataset.id);
+            const note = notes.find(n => n.id === id);
+            noteText.value = note.text;
+            noteText.dataset.editId = id;
+        });
+    });
+
+    document.querySelectorAll(".delete-btn").forEach(btn => {
+        btn.addEventListener("click", () => {
+            const id = parseInt(btn.dataset.id);
+            notes = notes.filter(n => n.id !== id);
+            syncQueue = syncQueue.filter(n => n.id !== id);
+            localStorage.setItem("notes", JSON.stringify(notes));
+            localStorage.setItem("syncQueue", JSON.stringify(syncQueue));
+            render();
+        });
+    });
 }
 
 function updateNetworkStatus() {

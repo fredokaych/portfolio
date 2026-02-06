@@ -54,5 +54,22 @@ li {
     margin-bottom: 0.5rem;
     padding: 0.75rem;
     border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
+.note-actions button {
+    margin-left: 0.5rem;
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+    background: #f87171;
+    border: none;
+    cursor: pointer;
+    font-size: 0.85rem;
+}
+
+.note-actions .edit-btn {
+    background: #facc15;
+    color: #0f172a;
+}
