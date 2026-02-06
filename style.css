@@ -397,6 +397,20 @@
         font-size: 0.9rem;
     }
 
+    .tech-stack {
+        margin-top: -0.5rem;
+        margin-bottom: 1.5rem;
+        font-size: 0.85rem;
+        color: #94a3b8;
+        /* Muted slate */
+        letter-spacing: 0.03em;
+        font-family: 'JetBrains Mono', monospace;
+    }
+
+    .project-card:hover .tech-stack {
+        color: #cbd5f5;
+    }
+
     /* Mobile Responsiveness */
     @media (max-width: 768px) {
         .menu-toggle {

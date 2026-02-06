@@ -39,7 +39,8 @@ button {
     cursor: pointer;
 }
 
-.notes, .sync {
+.notes,
+.sync {
     padding: 1.5rem;
 }
 
@@ -54,3 +55,4 @@ li {
     padding: 0.75rem;
     border-radius: 6px;
 }
+
