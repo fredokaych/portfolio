@@ -5,6 +5,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fred Okech | Creative Developer</title>
+    <meta name="description"
+        content="Fred Okech - Creative web developer building scalable web solutions, interactive dashboards, offline apps, and algorithm visualizers.">
 
     <!-- Google Fonts for modern typography -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,17 +14,21 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono:wght@400;700&display=swap"
         rel="stylesheet">
+
+    <!-- Main CSS -->
     <link rel="stylesheet" href="style.css" />
 
-
+    <!-- Preload main script for performance -->
+    <link rel="preload" href="script.js" as="script">
 </head>
 
 <body>
 
+    <!-- HEADER / NAVIGATION -->
     <header>
-        <nav>
+        <nav aria-label="Main navigation">
             <div class="logo">Fred<span class="gradient-text">Okech</span>.</div>
-            <div class="menu-toggle" id="mobile-menu">
+            <div class="menu-toggle" id="mobile-menu" aria-label="Toggle navigation menu" role="button" tabindex="0">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -37,15 +43,15 @@
     </header>
 
     <main>
-        <!-- Hero Section with Particle Background -->
-        <section id="hero">
-            <canvas id="canvas-bg"></canvas>
+        <!-- HERO SECTION -->
+        <section id="hero" aria-label="Hero section">
+            <canvas id="canvas-bg">Your browser does not support HTML5 Canvas</canvas>
             <div class="hero-content fade-in-section">
                 <p class="hero-subtitle">Hi, my name is</p>
                 <h1 class="hero-title">Fred Okech.</h1>
                 <p class="hero-desc">
-                    I build practical, scalable web solutions and interactive
-                    digital experiences. Let's turn ideas into reality.
+                    I build practical, scalable web solutions and interactive digital experiences.
+                    Let's turn ideas into reality.
                 </p>
                 <div class="hero-btns">
                     <a href="#projects" class="btn btn-primary">View Projects</a>
@@ -54,193 +60,156 @@
             </div>
         </section>
 
-        <!-- About Section -->
-        <section id="about" class="fade-in-section">
-
+        <!-- ABOUT SECTION -->
+        <section id="about" class="fade-in-section" aria-labelledby="about-header">
             <div class="section-header">
-                <h2>About Me</h2>
+                <h2 id="about-header">About Me</h2>
             </div>
             <div class="card">
                 <p>
-                    I’m a developer with a strong foundation in web technologies and a passion
-                    for building systems that actually solve problems.
-                    I bridge the gap between design and engineering, combining clean code
-                    with intuitive user interfaces. I am constantly learning new tools
+                    I’m a developer with a strong foundation in web technologies and a passion for building systems that
+                    actually solve problems.
+                    I bridge the gap between design and engineering, combining clean code with intuitive user
+                    interfaces. I am constantly learning new tools
                     and frameworks to stay ahead in the fast-paced tech world.
-                    I write code that actually does stuff. Frontend, backend, or both. If it solves problems, I’m on it.
+                    I write code that actually does stuff—frontend, backend, or both. If it solves problems, I’m on it.
                     Constantly learning, always shipping.
                 </p>
             </div>
         </section>
 
-        <!-- Projects Section -->
-        <section id="projects" class="fade-in-section">
+        <!-- PROJECTS SECTION -->
+        <section id="projects" class="fade-in-section" aria-labelledby="projects-header">
             <div class="section-header">
-                <h2>Projects</h2>
+                <h2 id="projects-header">Projects</h2>
                 <p>Stuff I’ve coded, debugged, and pushed live. Can build more. Can scale bigger. Only your imagination
                     sets the limits.</p>
             </div>
 
-
             <div class="grid">
                 <!-- Project 1 -->
-
-                <div class="project-card card">
-                    <h3>Pathfinding Algorithm Visualizer</h3>
-
+                <div class="project-card card" role="region" aria-labelledby="project1-title">
+                    <h3 id="project1-title">Pathfinding Algorithm Visualizer</h3>
                     <p>
                         An interactive in-browser visualization engine for graph traversal algorithms.
                         Built from scratch using vanilla JavaScript, it renders a dynamic grid and animates BFS, DFS,
-                        and A* step-by-step
-                        with adjustable execution speed.
+                        and A* step-by-step with adjustable execution speed.
                     </p>
-
-                    <p class="tech-stack">
+                    <p class="tech-stack"
+                        aria-label="Tech stack: HTML, CSS, JavaScript, Algorithms, State Management, DOM Rendering">
                         HTML • CSS • JavaScript • Algorithms • State Management • DOM Rendering
                     </p>
-
-
                     <div class="card-links">
-                        <a href="projects/pathfinding-visualizer/index.html" target="_blank">Live Demo &rarr;</a>
+                        <a href="projects/pathfinding-visualizer/index.html" target="_blank"
+                            rel="noopener noreferrer">Live Demo &rarr;</a>
                         <a href="https://github.com/fredokaych/portfolio/tree/main/projects/pathfinding-visualizer"
-                            target="_blank">GitHub &rarr;</a>
+                            target="_blank" rel="noopener noreferrer">GitHub &rarr;</a>
                     </div>
                 </div>
 
-
-
                 <!-- Project 2 -->
-
-
-                <div class="project-card card">
-                    <h3>Education Data Dashboard</h3>
-
+                <div class="project-card card" role="region" aria-labelledby="project2-title">
+                    <h3 id="project2-title">Education Data Dashboard</h3>
                     <p>
                         A dynamic, interactive dashboard that visualizes school performance data.
                         Built with pure HTML, CSS, and JavaScript, it supports county and level filters,
                         displays KPIs, tabular data, and renders custom charts using the Canvas API.
                     </p>
-
-                    <p class="tech-stack">
+                    <p class="tech-stack"
+                        aria-label="Tech stack: HTML, CSS, JavaScript, Data Visualization, DOM Manipulation, Canvas API">
                         HTML • CSS • JavaScript • Data Visualization • DOM Manipulation • Canvas API
                     </p>
-
                     <div class="card-links">
-                        <a href="projects/data-dashboard/index.html" target="_blank">Live Demo &rarr;</a>
+                        <a href="projects/data-dashboard/index.html" target="_blank" rel="noopener noreferrer">Live Demo
+                            &rarr;</a>
                         <a href="https://github.com/fredokaych/portfolio/tree/main/projects/data-dashboard"
-                            target="_blank">GitHub &rarr;</a>
+                            target="_blank" rel="noopener noreferrer">GitHub &rarr;</a>
                     </div>
                 </div>
 
-
                 <!-- Project 3 -->
-
-
-
-
-                <div class="project-card card">
-                    <h3>Offline-First Task Manager</h3>
-
+                <div class="project-card card" role="region" aria-labelledby="project3-title">
+                    <h3 id="project3-title">Offline-First Task Manager</h3>
                     <p>
                         A progressive web app that functions fully offline, allowing task creation,
                         editing, and deletion. Implements Service Workers for caching and LocalStorage
                         for persistent offline state, with simulated sync when online.
                     </p>
-
-                    <p class="tech-stack">
+                    <p class="tech-stack"
+                        aria-label="Tech stack: HTML, CSS, JavaScript, Service Workers, LocalStorage, PWA Principles">
                         HTML • CSS • JavaScript • Service Workers • LocalStorage • PWA Principles
                     </p>
-
                     <div class="card-links">
-                        <a href="projects/offline-notes/index.html" target="_blank">Live Demo &rarr;</a>
+                        <a href="projects/offline-notes/index.html" target="_blank" rel="noopener noreferrer">Live Demo
+                            &rarr;</a>
                         <a href="https://github.com/fredokaych/portfolio/tree/main/projects/offline-notes"
-                            target="_blank">GitHub &rarr;</a>
+                            target="_blank" rel="noopener noreferrer">GitHub &rarr;</a>
                     </div>
                 </div>
-
-
 
             </div>
         </section>
 
-        <!-- Code Playground Section -->
-        <section id="playground" class="fade-in-section">
+        <!-- CODE PLAYGROUND SECTION -->
+        <section id="playground" class="fade-in-section" aria-labelledby="playground-header">
             <div class="section-header">
-                <h2>Code Playground</h2>
+                <h2 id="playground-header">Code Playground</h2>
                 <p>Interactive JavaScript demos.</p>
             </div>
 
             <div class="grid">
-                <div class="playground-card card playground-interface">
-                    <h3>Palindrome Checker</h3>
+                <div class="playground-card card playground-interface" role="region" aria-labelledby="palindrome-title">
+                    <h3 id="palindrome-title">Palindrome Checker</h3>
+                    <label for="palInput" class="sr-only">Enter text to check palindrome</label>
                     <p>Enter a word or phrase below to check if it reads the same backward as forward.</p>
-
                     <div class="input-group">
                         <input type="text" id="palInput" placeholder="Enter a word..." autocomplete="off" />
                         <button class="run-btn" onclick="checkPalindrome()">Run</button>
                     </div>
-
                     <div id="palResult" class="status-neutral">Waiting for input...</div>
                 </div>
 
-                <!-- Placeholder for another demo -->
-                <div class="playground-card card">
-                    <h3>Coming Soon</h3>
+                <div class="playground-card card" role="region" aria-labelledby="comingsoon-title">
+                    <h3 id="comingsoon-title">Coming Soon</h3>
                     <p>More interactive algorithms and visualizations are being cooked up. Stay tuned!</p>
                 </div>
             </div>
-            <div class="project-card card">
-                <h3>Upcoming Algorithm Demos</h3>
-
-                <p>
-                    Interactive algorithm experiments under development, including sorting visualizations,
-                    recursion simulators, and dynamic programming demos. Showcases a modular, reusable engine
-                    for client-side algorithm visualization.
-                </p>
-
-                <p class="tech-stack">
-                    HTML • CSS • JavaScript • DOM Rendering • State Management • Animations
-                </p>
-
-                <div class="card-links">
-                    <a href="#" target="_blank">Live Demo &rarr;</a>
-                    <a href="#" target="_blank">GitHub &rarr;</a>
-                </div>
-            </div>
-
         </section>
 
-        <!-- Contact Section -->
-        <section id="contact" class="fade-in-section">
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="fade-in-section" aria-labelledby="contact-header">
             <div class="section-header">
-                <h2>Get In Touch</h2>
+                <h2 id="contact-header">Get In Touch</h2>
                 <p>I'm currently available for freelance work or full-time opportunities.</p>
             </div>
 
             <div class="contact-links">
                 <a href="mailto:fredokaych@gmail.com" class="contact-item">
-                    <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                    <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                         <path
                             d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
                     </svg>
-                    fredokaych@gmail.com
+                    <span>Email Me</span>
                 </a>
-                <a href="https://github.com/fredokaych" target="_blank" class="contact-item">
-                    <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                <a href="https://github.com/fredokaych" target="_blank" rel="noopener noreferrer" class="contact-item">
+                    <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                         <path
                             d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0012 2z" />
                     </svg>
-                    GitHub
+                    <span>GitHub</span>
                 </a>
             </div>
         </section>
+
     </main>
 
     <footer>
         <p>&copy; <span id="year"></span> Fred Okech. Built with ❤️ and Code.</p>
     </footer>
 
-    <script src="script.js"></script>
+    <!-- Main JS -->
+    <script src="script.js" defer></script>
+
 </body>
 
 </html>
