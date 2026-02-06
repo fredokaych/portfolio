@@ -121,8 +121,8 @@ class Particle {
         }
 
         // Slow particles back to original speed
-        this.directionX *= 0.95;
-        this.directionY *= 0.95;
+        // this.directionX *= 0.95;
+        // this.directionY *= 0.95;
 
 
         this.draw();
