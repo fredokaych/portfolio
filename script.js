@@ -127,25 +127,31 @@ class Particle {
         this.y += this.directionY;
 
         // Bounce off edges properly, considering particle size
+
         if (this.x + this.size > canvas.width) {
             this.x = canvas.width - this.size;
             this.directionX = -this.directionX;
+            this.baseDirectionX = -this.baseDirectionX;
         }
         if (this.x - this.size < 0) {
             this.x = this.size;
             this.directionX = -this.directionX;
+            this.baseDirectionX = -this.baseDirectionX;
         }
 
         if (this.y + this.size > canvas.height) {
             this.y = canvas.height - this.size;
             this.directionY = -this.directionY;
+            this.baseDirectionY = -this.baseDirectionY;
         }
         if (this.y - this.size < 0) {
             this.y = this.size;
             this.directionY = -this.directionY;
+            this.baseDirectionY = -this.baseDirectionY;
         }
 
-        // --- MOUSE INTERACTION LOGIC (From User's Code) ---
+
+        // --- MOUSE INTERACTION LOGIC ---
         let dx = mouse.x - this.x;
         let dy = mouse.y - this.y;
         let distance = Math.sqrt(dx * dx + dy * dy);
