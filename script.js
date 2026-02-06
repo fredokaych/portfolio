@@ -88,6 +88,8 @@ class Particle {
         this.y = y;
         this.directionX = directionX;
         this.directionY = directionY;
+        this.baseDirectionX = directionX;
+        this.baseDirectionY = directionY;
         this.size = size;
         this.color = color;
     }
@@ -121,8 +123,8 @@ class Particle {
         }
 
         // Slow particles back to original speed
-        this.directionX *= 0.99;
-        this.directionY *= 0.99;
+        this.directionX += (this.baseDirectionX - this.directionX) * 0.05;
+        this.directionY += (this.baseDirectionY - this.directionY) * 0.05;
 
 
         this.draw();
