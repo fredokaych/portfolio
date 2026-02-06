@@ -1,0 +1,44 @@
+body {
+  font-family: system-ui, sans-serif;
+  text-align: center;
+  background: #f4f6f8;
+}
+
+.controls {
+  margin-bottom: 15px;
+}
+
+#grid {
+  display: grid;
+  grid-template-columns: repeat(20, 25px);
+  justify-content: center;
+  gap: 1px;
+}
+
+.cell {
+  width: 25px;
+  height: 25px;
+  background: white;
+  border: 1px solid #e0e0e0;
+  cursor: pointer;
+}
+
+.cell.start {
+  background: #2ecc71;
+}
+
+.cell.end {
+  background: #e74c3c;
+}
+
+.cell.wall {
+  background: #2c3e50;
+}
+
+.cell.visited {
+  background: #74b9ff;
+}
+
+.cell.path {
+  background: #f1c40f;
+}
