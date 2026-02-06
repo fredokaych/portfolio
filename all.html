@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fred Okech | Creative Developer</title>
+    <meta name="description"
+        content="Fred Okech - Creative web developer building scalable web solutions, interactive dashboards, offline apps, and algorithm visualizers.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+    <style>
+        /* =========================================
+           VARIABLES & RESET (Optimized Layout)
+           ========================================= */
+        :root {
+            /* Color Palette */
+            --bg-color: #0f172a;
+            --bg-pattern: rgba(255, 255, 255, 0.03);
+            --card-bg: rgba(30, 41, 59, 0.6);
+            --card-hover-bg: rgba(30, 41, 59, 0.8);
+            --text-primary: #f1f5f9;
+            --text-secondary: #94a3b8;
+            --accent-primary: #3b82f6;
+            --accent-secondary: #8b5cf6;
+            --accent-gradient: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+            --accent-glow: rgba(59, 130, 246, 0.3);
+            --border-color: rgba(255, 255, 255, 0.08);
+            --nav-bg: rgba(15, 23, 42, 0.9);
+
+            /* Spacing - Tightened to reduce whitespace */
+            --section-padding: 4rem 1rem;
+            --container-width: 1000px;
+            
+            /* Transitions */
+            --transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            /* Subtle dot grid pattern to fill negative space */
+            background-image: radial-gradient(var(--bg-pattern) 1px, transparent 1px);
+            background-size: 32px 32px;
+            color: var(--text-primary);
+            line-height: 1.6;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* =========================================
+           TYPOGRAPHY
+           ========================================= */
+        h1, h2, h3 {
+            line-height: 1.2;
+            font-weight: 700;
+            color: var(--text-primary);
+        }
+
+        p {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: var(--transition);
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .gradient-text {
+            background: var(--accent-gradient);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            display: inline-block;
+        }
+
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border-width: 0;
+        }
+
+        /* =========================================
+           HEADER / NAV
+           ========================================= */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            background: var(--nav-bg);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        nav {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 1rem 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.25rem;
+            font-weight: 800;
+            letter-spacing: -0.04em;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: var(--text-secondary);
+            position: relative;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: var(--text-primary);
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background: var(--accent-gradient);
+            transition: var(--transition);
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        /* Mobile Menu */
+        .menu-toggle {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 5px;
+            z-index: 1001;
+        }
+
+        .bar {
+            width: 24px;
+            height: 2px;
+            background-color: var(--text-primary);
+            transition: var(--transition);
+        }
+
+        /* =========================================
+           LAYOUT & ANIMATIONS
+           ========================================= */
+        main {
+            padding-top: 70px;
+        }
+
+        section {
+            padding: var(--section-padding);
+            max-width: var(--container-width);
+            margin: 0 auto;
+            position: relative;
+        }
+
+        /* Fade In Animation */
+        .fade-in-section {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+            will-change: opacity, transform;
+        }
+
+        .fade-in-section.is-visible {
+            opacity: 1;
+            transform: none;
+        }
+
+        /* =========================================
+           HERO SECTION
+           ========================================= */
+        #hero {
+            min-height: 85vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            position: relative;
+            padding-top: 2rem;
+        }
+
+        /* Canvas Background */
+        #canvas-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.6;
+        }
+
+        .hero-content {
+            z-index: 1;
+            max-width: 800px;
+            pointer-events: none; /* Let clicks pass through to canvas if needed, but text links need pointer-events auto */
+        }
+        
+        .hero-content * {
+            pointer-events: auto; /* Re-enable clicks on buttons/text */
+        }
+
+        .hero-subtitle {
+            font-size: 0.9rem;
+            color: var(--accent-primary);
+            margin-bottom: 0.75rem;
+            font-family: 'JetBrains Mono', monospace;
+            font-weight: 500;
+        }
+
+        .hero-title {
+            font-size: clamp(2.5rem, 6vw, 4rem); 
+            margin-bottom: 1rem;
+            letter-spacing: -0.03em;
+            line-height: 1.1;
+        }
+
+        .hero-desc {
+            font-size: 1.05rem;
+            color: var(--text-secondary);
+            max-width: 540px;
+            margin-bottom: 2rem;
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0.75rem 1.75rem;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: var(--transition);
+            cursor: pointer;
+            border: none;
+        }
+
+        .btn-primary {
+            background: var(--accent-primary);
+            color: white;
+            box-shadow: 0 4px 14px var(--accent-glow);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(59, 130, 246, 0.5);
+        }
+
+        .btn-outline {
+            background: transparent;
+            border: 1px solid var(--border-color);
+            margin-left: 1rem;
+            color: var(--text-primary);
+        }
+
+        .btn-outline:hover {
+            border-color: var(--text-primary);
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        /* =========================================
+           SECTIONS (About, Projects, etc.)
+           ========================================= */
+        .section-header {
+            margin-bottom: 2.5rem;
+            text-align: left;
+        }
+
+        .section-header h2 {
+            font-size: 1.75rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .section-header p {
+            max-width: 600px;
+            font-size: 0.95rem;
+        }
+
+        /* =========================================
+           GRID & CARDS
+           ========================================= */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            padding: 1.5rem;
+            border-radius: 12px;
+            transition: var(--transition);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(59, 130, 246, 0.3);
+            background: var(--card-hover-bg);
+            box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.3);
+        }
+
+        .card h3 {
+            font-size: 1.25rem;
+            margin-bottom: 0.75rem;
+            color: var(--text-primary);
+        }
+
+        .card p {
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+        }
+
+        .card-links {
+            margin-top: auto;
+            padding-top: 1rem;
+            border-top: 1px solid var(--border-color);
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .card-links a {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--accent-primary);
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .card-links a:hover {
+            color: var(--accent-secondary);
+        }
+
+        .tech-stack {
+            margin-top: -0.5rem;
+            margin-bottom: 1.5rem;
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+            font-family: 'JetBrains Mono', monospace;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+        
+        .tech-stack span {
+            color: #64748b;
+        }
+
+        /* =========================================
+           PLAYGROUND
+           ========================================= */
+        .playground-interface {
+            font-family: 'JetBrains Mono', monospace;
+            border: 1px solid var(--border-color);
+        }
+
+        .playground-interface h3 {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .input-group {
+            display: flex;
+            gap: 8px;
+            margin: 1rem 0;
+        }
+
+        input[type="text"] {
+            flex: 1;
+            padding: 0.6rem 0.8rem;
+            border-radius: 6px;
+            border: 1px solid var(--border-color);
+            background: rgba(0, 0, 0, 0.2);
+            color: var(--text-primary);
+            font-family: inherit;
+            font-size: 0.9rem;
+        }
+
+        input[type="text"]:focus {
+            outline: none;
+            border-color: var(--accent-primary);
+            box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+        }
+
+        .run-btn {
+            background: var(--text-primary);
+            color: var(--bg-color);
+            border: none;
+            padding: 0 1.2rem;
+            border-radius: 6px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+            font-size: 0.9rem;
+        }
+
+        .run-btn:hover {
+            background: #e2e8f0;
+        }
+
+        #palResult {
+            margin-top: 0.75rem;
+            font-size: 0.9rem;
+            min-height: 1.4rem;
+        }
+
+        .status-success { color: #4ade80; }
+        .status-error { color: #f87171; }
+        .status-neutral { color: #64748b; }
+
+        /* =========================================
+           CONTACT & FOOTER
+           ========================================= */
+        #contact {
+            text-align: center;
+        }
+
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            border: 1px solid var(--border-color);
+            border-radius: 50%;
+            transition: var(--transition);
+            color: var(--text-secondary);
+        }
+
+        .contact-item:hover {
+            background: rgba(255, 255, 255, 0.05);
+            border-color: var(--accent-primary);
+            color: var(--accent-primary);
+            transform: translateY(-3px);
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: var(--text-secondary);
+            border-top: 1px solid var(--border-color);
+            margin-top: 3rem;
+            font-size: 0.85rem;
+        }
+
+        /* =========================================
+           RESPONSIVE
+           ========================================= */
+        @media (max-width: 768px) {
+            .menu-toggle { display: flex; }
+
+            .nav-links {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background: var(--bg-color);
+                flex-direction: column;
+                padding: 2rem;
+                gap: 1.5rem;
+                border-bottom: 1px solid var(--border-color);
+                transform: translateY(-150%);
+                transition: transform 0.3s ease-in-out;
+                z-index: 999;
+                box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+            }
+
+            .nav-links.active {
+                transform: translateY(0);
+            }
+
+            .hero-title {
+                font-size: 2.25rem;
+            }
+            
+            .btn {
+                width: 100%;
+                margin: 0.5rem 0;
+            }
+            
+            .btn-outline { margin-left: 0; }
+            
+            .section-header {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER / NAVIGATION -->
+    <header>
+        <nav aria-label="Main navigation">
+            <div class="logo">Fred<span class="gradient-text">Okech</span>.</div>
+            <div class="menu-toggle" id="mobile-menu" aria-label="Toggle navigation menu" role="button" tabindex="0">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#playground">Playground</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section id="hero" aria-label="Hero section">
+            <!-- Canvas for Mouse Interactive Animation -->
+            <canvas id="canvas-bg">Your browser does not support HTML5 Canvas</canvas>
+            
+            <div class="hero-content fade-in-section is-visible">
+                <p class="hero-subtitle">Hi, my name is</p>
+                <h1 class="hero-title">Fred Okech.</h1>
+                <p class="hero-desc">
+                    I build practical, scalable web solutions and interactive digital experiences.
+                    Let's turn ideas into reality.
+                </p>
+                <div class="hero-btns">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="#contact" class="btn btn-outline">Contact Me</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section id="about" class="fade-in-section" aria-labelledby="about-header">
+            <div class="section-header">
+                <h2 id="about-header">About Me</h2>
+            </div>
+            <div class="card">
+                <p>
+                    I’m a developer with a strong foundation in web technologies and a passion for building systems that
+                    actually solve problems.
+                    I bridge the gap between design and engineering, combining clean code with intuitive user
+                    interfaces. I am constantly learning new tools
+                    and frameworks to stay ahead in the fast-paced tech world.
+                    I write code that actually does stuff—frontend, backend, or both. If it solves problems, I’m on it.
+                    Constantly learning, always shipping.
+                </p>
+            </div>
+        </section>
+
+        <!-- PROJECTS SECTION -->
+        <section id="projects" class="fade-in-section" aria-labelledby="projects-header">
+            <div class="section-header">
+                <h2 id="projects-header">Projects</h2>
+                <p>Stuff I’ve coded, debugged, and pushed live. Scalable solutions and interactive tools.</p>
+            </div>
+
+            <div class="grid">
+                <!-- Project 1 -->
+                <article class="project-card card" role="region" aria-labelledby="project1-title">
+                    <div>
+                        <h3 id="project1-title">Pathfinding Algorithm Visualizer</h3>
+                        <p>
+                            An interactive in-browser visualization engine for graph traversal algorithms.
+                            Built from scratch using vanilla JavaScript, it renders a dynamic grid and animates BFS, DFS,
+                            and A* step-by-step.
+                        </p>
+                        <div class="tech-stack">
+                            <span>HTML</span> • <span>CSS</span> • <span>JavaScript</span> • <span>Algorithms</span>
+                        </div>
+                    </div>
+                    <div class="card-links">
+                        <a href="projects/pathfinding-visualizer/index.html" target="_blank" rel="noopener noreferrer">
+                            Live Demo <span>&rarr;</span>
+                        </a>
+                        <a href="https://github.com/fredokaych/portfolio/tree/main/projects/pathfinding-visualizer" target="_blank" rel="noopener noreferrer">
+                            GitHub <span>&rarr;</span>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Project 2 -->
+                <article class="project-card card" role="region" aria-labelledby="project2-title">
+                    <div>
+                        <h3 id="project2-title">Education Data Dashboard</h3>
+                        <p>
+                            A dynamic, interactive dashboard that visualizes school performance data.
+                            Supports county and level filters, displays KPIs, tabular data, and renders custom charts using the Canvas API.
+                        </p>
+                        <div class="tech-stack">
+                            <span>HTML</span> • <span>CSS</span> • <span>JavaScript</span> • <span>Data Visualization</span>
+                        </div>
+                    </div>
+                    <div class="card-links">
+                        <a href="projects/data-dashboard/index.html" target="_blank" rel="noopener noreferrer">
+                            Live Demo <span>&rarr;</span>
+                        </a>
+                        <a href="https://github.com/fredokaych/portfolio/tree/main/projects/data-dashboard" target="_blank" rel="noopener noreferrer">
+                            GitHub <span>&rarr;</span>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Project 3 -->
+                <article class="project-card card" role="region" aria-labelledby="project3-title">
+                    <div>
+                        <h3 id="project3-title">Offline-First Task Manager</h3>
+                        <p>
+                            A progressive web app that functions fully offline. Allows task creation,
+                            editing, and deletion. Implements Service Workers for caching.
+                        </p>
+                        <div class="tech-stack">
+                            <span>HTML</span> • <span>CSS</span> • <span>JavaScript</span> • <span>PWA</span> • <span>LocalStorage</span>
+                        </div>
+                    </div>
+                    <div class="card-links">
+                        <a href="projects/offline-notes/index.html" target="_blank" rel="noopener noreferrer">
+                            Live Demo <span>&rarr;</span>
+                        </a>
+                        <a href="https://github.com/fredokaych/portfolio/tree/main/projects/offline-notes" target="_blank" rel="noopener noreferrer">
+                            GitHub <span>&rarr;</span>
+                        </a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- CODE PLAYGROUND SECTION -->
+        <section id="playground" class="fade-in-section" aria-labelledby="playground-header">
+            <div class="section-header">
+                <h2 id="playground-header">Code Playground</h2>
+                <p>Interactive JavaScript demos running in the browser.</p>
+            </div>
+
+            <div class="grid">
+                <div class="playground-card card playground-interface" role="region" aria-labelledby="palindrome-title">
+                    <div>
+                        <h3 id="palindrome-title">Palindrome Checker</h3>
+                        <p style="margin-bottom: 1rem;">Enter text to check if it reads the same backward.</p>
+                    </div>
+                    <div>
+                        <div class="input-group">
+                            <label for="palInput" class="sr-only">Enter text</label>
+                            <input type="text" id="palInput" placeholder="e.g. racecar" autocomplete="off" />
+                            <button class="run-btn" onclick="checkPalindrome()">Run</button>
+                        </div>
+                        <div id="palResult" class="status-neutral">Waiting for input...</div>
+                    </div>
+                </div>
+
+                <div class="playground-card card" role="region" aria-labelledby="comingsoon-title">
+                    <h3 id="comingsoon-title">More Coming Soon</h3>
+                    <p>Sorting visualizers and DOM games are currently being cooked up. Stay tuned!</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="fade-in-section" aria-labelledby="contact-header">
+            <div class="section-header">
+                <h2 id="contact-header">Get In Touch</h2>
+                <p>I'm currently available for freelance work or full-time opportunities.</p>
+            </div>
+
+            <div class="contact-links">
+                <!-- Email -->
+                <a href="mailto:fredokaych@gmail.com" class="contact-item" aria-label="Email Me">
+                    <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+                    </svg>
+                </a>
+                <!-- GitHub -->
+                <a href="https://github.com/fredokaych" target="_blank" rel="noopener noreferrer" class="contact-item" aria-label="GitHub">
+                    <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0012 2z" />
+                    </svg>
+                </a>
+                <!-- LinkedIn -->
+                <a href="https://www.linkedin.com/in/fredokaych/" target="_blank" rel="noopener noreferrer" class="contact-item" aria-label="LinkedIn">
+                    <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8h4V24h-4V8zm7 0h3.78v2.16h.05c.53-1 1.83-2.16 3.77-2.16 4.03 0 4.78 2.65 4.78 6.09V24h-4v-7.77c0-1.85-.03-4.23-2.58-4.23-2.58 0-2.98 2.02-2.98 4.11V24h-4V8z" />
+                    </svg>
+                </a>
+                <!-- Twitter/X -->
+                <a href="https://x.com/fredokaych" target="_blank" rel="noopener noreferrer" class="contact-item" aria-label="X / Twitter">
+                    <svg fill="currentColor" viewBox="0 0 16 16" height="18" width="18">
+                        <path d="M12.6 0.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867 -5.07 -4.425 5.07H0.316l5.733 -6.57L0 0.75h5.063l3.495 4.633L12.601 0.75Zm-0.86 13.028h1.36L4.323 2.145H2.865z"/>
+                    </svg>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Fred Okech. Built with ❤️ and Code.</p>
+    </footer>
+
+    <!-- MAIN JAVASCRIPT (MERGED VERSION) -->
+    <script>
+        // 1. Mobile Menu Toggle
+        const menuToggle = document.getElementById('mobile-menu');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+            });
+        });
+
+        // 2. Scroll Animation (Intersection Observer)
+        const observerOptions = {
+            threshold: 0.15
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in-section').forEach(section => {
+            observer.observe(section);
+        });
+
+        // 3. Dynamic Year in Footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // 4. Palindrome Logic with Enhanced Feedback
+        function checkPalindrome() {
+            const input = document.getElementById("palInput");
+            const result = document.getElementById("palResult");
+            const val = input.value.trim();
+
+            // UI Reset
+            result.classList.remove('status-success', 'status-error');
+
+            if (!val) {
+                result.textContent = "Please enter a word.";
+                result.className = "status-neutral";
+                return;
+            }
+
+            // Logic
+            const cleaned = val.toLowerCase().replace(/[^a-z0-9]/g, "");
+            const reversed = cleaned.split("").reverse().join("");
+
+            if (cleaned === reversed) {
+                result.textContent = `Yes, "${val}" is a palindrome!`;
+                result.classList.add('status-success');
+            } else {
+                result.textContent = `No, "${val}" is not a palindrome.`;
+                result.classList.add('status-error');
+            }
+        }
+
+        // Allow "Enter" key to trigger palindrome check
+        document.getElementById('palInput').addEventListener('keypress', function (e) {
+            if (e.key === 'Enter') {
+                checkPalindrome();
+            }
+        });
+
+        // 5. CANVAS ANIMATION WITH MOUSE INTERACTION (USER'S PREFERRED LOGIC)
+        // Integrated into the modern layout structure
+        const canvas = document.getElementById('canvas-bg');
+        const ctx = canvas.getContext('2d');
+        let particlesArray;
+        
+        // Mouse Object for Interaction
+        let mouse = { 
+            x: null, 
+            y: null, 
+            radius: 100 // Interaction radius
+        };
+
+        // Resize Canvas to fit the Hero Section (not full window)
+        function resizeCanvas() {
+            const heroSection = document.getElementById('hero');
+            canvas.width = window.innerWidth;
+            canvas.height = heroSection.offsetHeight;
+            initParticles();
+        }
+
+        // Track mouse position
+        window.addEventListener('mousemove', (event) => {
+            mouse.x = event.x;
+            mouse.y = event.y;
+        });
+        
+        // Handle Mouse Leaving Window (Optional: stops interaction when mouse leaves)
+        window.addEventListener('mouseout', () => {
+            mouse.x = undefined;
+            mouse.y = undefined;
+        });
+
+        class Particle {
+            constructor(x, y, directionX, directionY, size, color) {
+                this.x = x;
+                this.y = y;
+                this.directionX = directionX;
+                this.directionY = directionY;
+                this.baseDirectionX = directionX;
+                this.baseDirectionY = directionY;
+                this.size = size;
+                this.color = color;
+            }
+            
+            // Draw particle
+            draw() {
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2, false);
+                ctx.fillStyle = this.color;
+                ctx.fill();
+            }
+            
+            // Update particle position
+            update() {
+                // Move particle
+                this.x += this.directionX;
+                this.y += this.directionY;
+
+                // Bounce off edges properly, considering particle size
+                if (this.x + this.size > canvas.width) {
+                    this.x = canvas.width - this.size;
+                    this.directionX = -this.directionX;
+                }
+                if (this.x - this.size < 0) {
+                    this.x = this.size;
+                    this.directionX = -this.directionX;
+                }
+
+                if (this.y + this.size > canvas.height) {
+                    this.y = canvas.height - this.size;
+                    this.directionY = -this.directionY;
+                }
+                if (this.y - this.size < 0) {
+                    this.y = this.size;
+                    this.directionY = -this.directionY;
+                }
+
+                // --- MOUSE INTERACTION LOGIC (From User's Code) ---
+                let dx = mouse.x - this.x;
+                let dy = mouse.y - this.y;
+                let distance = Math.sqrt(dx * dx + dy * dy);
+
+                if (distance < mouse.radius + this.size) {
+                    // Move particle away from mouse (Repulsion)
+                    let angle = Math.atan2(dy, dx);
+                    let force = (mouse.radius - distance) / mouse.radius;
+                    this.directionX -= force * Math.cos(angle) * 0.5;
+                    this.directionY -= force * Math.sin(angle) * 0.5;
+                }
+
+                // Slow particles back to original speed (Damping/Spring effect)
+                this.directionX += (this.baseDirectionX - this.directionX) * 0.05;
+                this.directionY += (this.baseDirectionY - this.directionY) * 0.05;
+                // -----------------------------------------------------
+
+                this.draw();
+            }
+        }
+
+        function initParticles() {
+            particlesArray = [];
+            // Calculate number of particles based on canvas size
+            // Adjusted density slightly to match cleaner aesthetic
+            let numberOfParticles = (canvas.height * canvas.width) / 11000;
+            
+            for (let i = 0; i < numberOfParticles; i++) {
+                let size = (Math.random() * 2) + 1;
+                let x = (Math.random() * ((canvas.width - size * 2) - (size * 2)) + size * 2);
+                let y = (Math.random() * ((canvas.height - size * 2) - (size * 2)) + size * 2);
+                let directionX = (Math.random() * 0.4) - 0.2;
+                let directionY = (Math.random() * 0.4) - 0.2;
+                let color = '#3b82f6'; // Blue accent
+
+                particlesArray.push(new Particle(x, y, directionX, directionY, size, color));
+            }
+        }
+
+        // Connect particles with lines
+        function connect() {
+            let opacityValue = 1;
+            for (let a = 0; a < particlesArray.length; a++) {
+                for (let b = a; b < particlesArray.length; b++) {
+                    let distance = ((particlesArray[a].x - particlesArray[b].x) * (particlesArray[a].x - particlesArray[b].x))
+                        + ((particlesArray[a].y - particlesArray[b].y) * (particlesArray[a].y - particlesArray[b].y));
+                    
+                    // Optimized distance check for lines to keep it clean
+                    if (distance < (canvas.width/7) * (canvas.height/7)) {
+                        opacityValue = 1 - (distance / 20000);
+                        ctx.strokeStyle = 'rgba(59, 130, 246,' + opacityValue + ')';
+                        ctx.lineWidth = 1;
+                        ctx.beginPath();
+                        ctx.moveTo(particlesArray[a].x, particlesArray[a].y);
+                        ctx.lineTo(particlesArray[b].x, particlesArray[b].y);
+                        ctx.stroke();
+                    }
+                }
+            }
+        }
+
+        function animate() {
+            requestAnimationFrame(animate);
+            ctx.clearRect(0, 0, innerWidth, innerHeight); // Clear full canvas
+            
+            for (let i = 0; i < particlesArray.length; i++) {
+                particlesArray[i].update();
+            }
+            connect();
+        }
+
+        // Handle Window Resize
+        window.addEventListener('resize', () => {
+            resizeCanvas();
+        });
+
+        // Initialize Animation
+        resizeCanvas();
+        animate();
+
+    </script>
+</body>
+</html>
