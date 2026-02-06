@@ -104,8 +104,7 @@ class Particle {
         if (this.x > canvas.width || this.x < 0) this.directionX = -this.directionX;
         if (this.y > canvas.height || this.y < 0) this.directionY = -this.directionY;
         // Move particle
-        this.x += this.directionX;
-        this.y += this.directionY;
+        
 
         // Mouse interaction - simple repulsion
         let dx = mouse.x - this.x;
@@ -123,6 +122,8 @@ class Particle {
         // Slow particles back to original speed
         // this.directionX *= 0.95;
         // this.directionY *= 0.95;
+        this.x += this.directionX;
+        this.y += this.directionY;
 
 
         this.draw();
