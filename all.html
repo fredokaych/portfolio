@@ -8,16 +8,17 @@
     <meta name="description"
         content="Fred Okech - Creative web developer building scalable web solutions, interactive dashboards, offline apps, and algorithm visualizers.">
 
-    <!-- Google Fonts -->
+    <!-- Google Fonts for modern typography -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono:wght@400;700&display=swap"
         rel="stylesheet">
 
+    <!-- Main CSS -->
     <style>
         /* =========================================
-           VARIABLES & RESET (Optimized Layout)
+           VARIABLES & RESET
            ========================================= */
         :root {
             /* Color Palette */
@@ -34,10 +35,10 @@
             --border-color: rgba(255, 255, 255, 0.08);
             --nav-bg: rgba(15, 23, 42, 0.9);
 
-            /* Spacing - Tightened to reduce whitespace */
+            /* Spacing */
             --section-padding: 4rem 1rem;
             --container-width: 1000px;
-            
+
             /* Transitions */
             --transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
         }
@@ -55,7 +56,7 @@
         body {
             font-family: 'Inter', sans-serif;
             background-color: var(--bg-color);
-            /* Subtle dot grid pattern to fill negative space */
+            /* Subtle dot grid pattern */
             background-image: radial-gradient(var(--bg-pattern) 1px, transparent 1px);
             background-size: 32px 32px;
             color: var(--text-primary);
@@ -96,6 +97,7 @@
             display: inline-block;
         }
 
+        /* Screen Reader Only */
         .sr-only {
             position: absolute;
             width: 1px;
@@ -199,7 +201,6 @@
             position: relative;
         }
 
-        /* Fade In Animation */
         .fade-in-section {
             opacity: 0;
             transform: translateY(20px);
@@ -213,16 +214,20 @@
         }
 
         /* =========================================
-           HERO SECTION
+           HERO SECTION (UPDATED FOR PHOTO)
            ========================================= */
         #hero {
             min-height: 85vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: flex-start;
+            display: grid;
+            /* Switched to Grid for side-by-side layout */
+            grid-template-columns: 1.2fr 0.8fr; 
+            align-items: center;
+            gap: 2rem;
             position: relative;
             padding-top: 2rem;
+            width: 100%;
+            max-width: 1200px; /* Slightly wider for the split layout */
+            margin: 0 auto;
         }
 
         /* Canvas Background */
@@ -233,17 +238,12 @@
             width: 100%;
             height: 100%;
             z-index: -1;
-            opacity: 0.6;
+            opacity: 0.5;
         }
 
+        /* Left Side: Text */
         .hero-content {
             z-index: 1;
-            max-width: 800px;
-            pointer-events: none; /* Let clicks pass through to canvas if needed, but text links need pointer-events auto */
-        }
-        
-        .hero-content * {
-            pointer-events: auto; /* Re-enable clicks on buttons/text */
         }
 
         .hero-subtitle {
@@ -255,7 +255,7 @@
         }
 
         .hero-title {
-            font-size: clamp(2.5rem, 6vw, 4rem); 
+            font-size: clamp(2.5rem, 5vw, 4rem);
             margin-bottom: 1rem;
             letter-spacing: -0.03em;
             line-height: 1.1;
@@ -266,6 +266,58 @@
             color: var(--text-secondary);
             max-width: 540px;
             margin-bottom: 2rem;
+        }
+
+        /* Right Side: Elegant Photo Container */
+        .hero-visual {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 2;
+        }
+
+        .image-frame {
+            position: relative;
+            width: 100%;
+            max-width: 380px; /* Classy size */
+            aspect-ratio: 3/4; /* Portrait ratio */
+            border-radius: 24px; /* Soft elegant corners */
+            overflow: hidden;
+            /* The Classy Gradient Border */
+            padding: 3px; 
+            background: var(--accent-gradient);
+            box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.5), 
+                        0 0 20px rgba(59, 130, 246, 0.2); /* Blue glow */
+            transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+
+        .image-frame:hover {
+            transform: translateY(-8px) scale(1.02);
+        }
+
+        /* Inner container to handle the gap between border and image */
+        .image-inner {
+            width: 100%;
+            height: 100%;
+            border-radius: 20px;
+            overflow: hidden;
+            background: #1e293b; /* Placeholder color while loading */
+            position: relative;
+        }
+
+        /* The Image Itself */
+        .hero-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Ensures photo fills area beautifully */
+            display: block;
+            transition: transform 0.6s ease;
+            filter: contrast(1.05) brightness(0.95); /* Slight cinematic touch */
+        }
+
+        .image-frame:hover .hero-img {
+            transform: scale(1.05);
         }
 
         /* Buttons */
@@ -323,9 +375,6 @@
             font-size: 0.95rem;
         }
 
-        /* =========================================
-           GRID & CARDS
-           ========================================= */
         .grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -393,7 +442,7 @@
             flex-wrap: wrap;
             gap: 0.5rem;
         }
-        
+
         .tech-stack span {
             color: #64748b;
         }
@@ -462,9 +511,7 @@
         /* =========================================
            CONTACT & FOOTER
            ========================================= */
-        #contact {
-            text-align: center;
-        }
+        #contact { text-align: center; }
 
         .contact-links {
             display: flex;
@@ -502,9 +549,105 @@
             font-size: 0.85rem;
         }
 
+        /* =========================
+   Partners / Logos Section
+   ========================= */
+        .partners {
+            padding: 4rem 0;
+            overflow: hidden;
+            background: #0f172a;
+            text-align: center;
+        }
+
+        .partners h2 {
+            margin-bottom: 2rem;
+            font-size: 1.8rem;
+            color: #e5e7eb;
+        }
+
+        .logo-slider { position: relative; width: 100%; overflow: hidden; }
+
+        .logo-track {
+            display: flex;
+            width: calc(200px * 12);
+            animation: scroll-left 30s linear infinite;
+        }
+
+        .logo-track img {
+            width: 180px;
+            height: auto;
+            margin: 0 2rem;
+            filter: grayscale(100%);
+            opacity: 0.75;
+            transition: all 0.3s ease;
+        }
+
+        .logo-track img:hover {
+            filter: grayscale(0%);
+            opacity: 1;
+            transform: scale(1.05);
+        }
+
+        .logo-slider:hover .logo-track { animation-play-state: paused; }
+
+        @keyframes scroll-left {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+
+        .logo-slider::before, .logo-slider::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            width: 80px;
+            height: 100%;
+            z-index: 2;
+            pointer-events: none;
+        }
+
+        .logo-slider::before {
+            left: 0;
+            background: linear-gradient(to right, #0f172a 0%, rgba(15, 23, 42, 0) 100%);
+        }
+
+        .logo-slider::after {
+            right: 0;
+            background: linear-gradient(to left, #0f172a 0%, rgba(15, 23, 42, 0) 100%);
+        }
+
         /* =========================================
            RESPONSIVE
            ========================================= */
+        @media (max-width: 900px) {
+            #hero {
+                /* Stack layout on tablets/mobile */
+                grid-template-columns: 1fr; 
+                text-align: center;
+                gap: 3rem;
+                padding-top: 4rem;
+            }
+
+            .hero-content {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .hero-desc {
+                margin-left: auto;
+                margin-right: auto;
+            }
+            
+            .hero-visual {
+                order: -1; /* Photo on top for mobile, or remove this to put it below */
+                margin-bottom: 1rem;
+            }
+
+            .image-frame {
+                max-width: 280px; /* Slightly smaller on mobile */
+            }
+        }
+
         @media (max-width: 768px) {
             .menu-toggle { display: flex; }
 
@@ -521,29 +664,22 @@
                 transform: translateY(-150%);
                 transition: transform 0.3s ease-in-out;
                 z-index: 999;
-                box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
             }
 
-            .nav-links.active {
-                transform: translateY(0);
-            }
+            .nav-links.active { transform: translateY(0); }
 
-            .hero-title {
-                font-size: 2.25rem;
-            }
-            
-            .btn {
-                width: 100%;
-                margin: 0.5rem 0;
-            }
-            
+            .hero-title { font-size: 2.25rem; }
+
+            .btn { width: 100%; margin: 0.5rem 0; }
             .btn-outline { margin-left: 0; }
-            
-            .section-header {
-                text-align: center;
-            }
+
+            .section-header { text-align: center; }
         }
     </style>
+
+    <!-- Preload main script for performance -->
+    <link rel="preload" href="script.js" as="script">
 </head>
 
 <body>
@@ -560,7 +696,7 @@
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#playground">Playground</a></li>
+                <li><a href="#playground">Code Playground</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -569,10 +705,10 @@
     <main>
         <!-- HERO SECTION -->
         <section id="hero" aria-label="Hero section">
-            <!-- Canvas for Mouse Interactive Animation -->
             <canvas id="canvas-bg">Your browser does not support HTML5 Canvas</canvas>
             
-            <div class="hero-content fade-in-section is-visible">
+            <!-- Text Content -->
+            <div class="hero-content fade-in-section">
                 <p class="hero-subtitle">Hi, my name is</p>
                 <h1 class="hero-title">Fred Okech.</h1>
                 <p class="hero-desc">
@@ -584,6 +720,23 @@
                     <a href="#contact" class="btn btn-outline">Contact Me</a>
                 </div>
             </div>
+
+            <!-- New Elegant Photo Section -->
+            <div class="hero-visual fade-in-section">
+                <div class="image-frame">
+                    <div class="image-inner">
+                        <!-- 
+                             PLACEHOLDER IMAGE INSTRUCTIONS:
+                             Replace the src below with your own file path.
+                             Example: src="images/fred-portrait.jpg"
+                        -->
+                        <img src="https://picsum.photos/seed/fredokech/600/800" 
+                             alt="Fred Okech Portrait" 
+                             class="hero-img">
+                    </div>
+                </div>
+            </div>
+
         </section>
 
         <!-- ABOUT SECTION -->
@@ -608,106 +761,121 @@
         <section id="projects" class="fade-in-section" aria-labelledby="projects-header">
             <div class="section-header">
                 <h2 id="projects-header">Projects</h2>
-                <p>Stuff I’ve coded, debugged, and pushed live. Scalable solutions and interactive tools.</p>
+                <p>Stuff I’ve coded, debugged, and pushed live. Can build more. Can scale bigger. Only your imagination
+                    sets the limits.</p>
             </div>
 
             <div class="grid">
                 <!-- Project 1 -->
-                <article class="project-card card" role="region" aria-labelledby="project1-title">
-                    <div>
-                        <h3 id="project1-title">Pathfinding Algorithm Visualizer</h3>
-                        <p>
-                            An interactive in-browser visualization engine for graph traversal algorithms.
-                            Built from scratch using vanilla JavaScript, it renders a dynamic grid and animates BFS, DFS,
-                            and A* step-by-step.
-                        </p>
-                        <div class="tech-stack">
-                            <span>HTML</span> • <span>CSS</span> • <span>JavaScript</span> • <span>Algorithms</span>
-                        </div>
-                    </div>
+                <div class="project-card card" role="region" aria-labelledby="project1-title">
+                    <h3 id="project1-title">Pathfinding Algorithm Visualizer</h3>
+                    <p>
+                        An interactive in-browser visualization engine for graph traversal algorithms.
+                        Built from scratch using vanilla JavaScript, it renders a dynamic grid and animates BFS, DFS,
+                        and A* step-by-step with adjustable execution speed.
+                    </p>
+                    <p class="tech-stack"
+                        aria-label="Tech stack: HTML, CSS, JavaScript, Algorithms, State Management, DOM Rendering">
+                        HTML • CSS • JavaScript • Algorithms • State Management • DOM Rendering
+                    </p>
                     <div class="card-links">
-                        <a href="projects/pathfinding-visualizer/index.html" target="_blank" rel="noopener noreferrer">
-                            Live Demo <span>&rarr;</span>
-                        </a>
-                        <a href="https://github.com/fredokaych/portfolio/tree/main/projects/pathfinding-visualizer" target="_blank" rel="noopener noreferrer">
-                            GitHub <span>&rarr;</span>
-                        </a>
+                        <a href="projects/pathfinding-visualizer/index.html" target="_blank"
+                            rel="noopener noreferrer">Live Demo &rarr;</a>
+                        <a href="https://github.com/fredokaych/portfolio/tree/main/projects/pathfinding-visualizer"
+                            target="_blank" rel="noopener noreferrer">GitHub &rarr;</a>
                     </div>
-                </article>
+                </div>
 
                 <!-- Project 2 -->
-                <article class="project-card card" role="region" aria-labelledby="project2-title">
-                    <div>
-                        <h3 id="project2-title">Education Data Dashboard</h3>
-                        <p>
-                            A dynamic, interactive dashboard that visualizes school performance data.
-                            Supports county and level filters, displays KPIs, tabular data, and renders custom charts using the Canvas API.
-                        </p>
-                        <div class="tech-stack">
-                            <span>HTML</span> • <span>CSS</span> • <span>JavaScript</span> • <span>Data Visualization</span>
-                        </div>
-                    </div>
+                <div class="project-card card" role="region" aria-labelledby="project2-title">
+                    <h3 id="project2-title">Education Data Dashboard</h3>
+                    <p>
+                        A dynamic, interactive dashboard that visualizes school performance data.
+                        Built with pure HTML, CSS, and JavaScript, it supports county and level filters,
+                        displays KPIs, tabular data, and renders custom charts using the Canvas API.
+                    </p>
+                    <p class="tech-stack"
+                        aria-label="Tech stack: HTML, CSS, JavaScript, Data Visualization, DOM Manipulation, Canvas API">
+                        HTML • CSS • JavaScript • Data Visualization • DOM Manipulation • Canvas API
+                    </p>
                     <div class="card-links">
-                        <a href="projects/data-dashboard/index.html" target="_blank" rel="noopener noreferrer">
-                            Live Demo <span>&rarr;</span>
-                        </a>
-                        <a href="https://github.com/fredokaych/portfolio/tree/main/projects/data-dashboard" target="_blank" rel="noopener noreferrer">
-                            GitHub <span>&rarr;</span>
-                        </a>
+                        <a href="projects/data-dashboard/index.html" target="_blank" rel="noopener noreferrer">Live Demo
+                            &rarr;</a>
+                        <a href="https://github.com/fredokaych/portfolio/tree/main/projects/data-dashboard"
+                            target="_blank" rel="noopener noreferrer">GitHub &rarr;</a>
                     </div>
-                </article>
+                </div>
 
                 <!-- Project 3 -->
-                <article class="project-card card" role="region" aria-labelledby="project3-title">
-                    <div>
-                        <h3 id="project3-title">Offline-First Task Manager</h3>
-                        <p>
-                            A progressive web app that functions fully offline. Allows task creation,
-                            editing, and deletion. Implements Service Workers for caching.
-                        </p>
-                        <div class="tech-stack">
-                            <span>HTML</span> • <span>CSS</span> • <span>JavaScript</span> • <span>PWA</span> • <span>LocalStorage</span>
-                        </div>
-                    </div>
+                <div class="project-card card" role="region" aria-labelledby="project3-title">
+                    <h3 id="project3-title">Offline-First Task Manager</h3>
+                    <p>
+                        A progressive web app that functions fully offline, allowing task creation,
+                        editing, and deletion. Implements Service Workers for caching and LocalStorage
+                        for persistent offline state, with simulated sync when online.
+                    </p>
+                    <p class="tech-stack"
+                        aria-label="Tech stack: HTML, CSS, JavaScript, Service Workers, LocalStorage, PWA Principles">
+                        HTML • CSS • JavaScript • Service Workers • LocalStorage • PWA Principles
+                    </p>
                     <div class="card-links">
-                        <a href="projects/offline-notes/index.html" target="_blank" rel="noopener noreferrer">
-                            Live Demo <span>&rarr;</span>
-                        </a>
-                        <a href="https://github.com/fredokaych/portfolio/tree/main/projects/offline-notes" target="_blank" rel="noopener noreferrer">
-                            GitHub <span>&rarr;</span>
-                        </a>
+                        <a href="projects/offline-notes/index.html" target="_blank" rel="noopener noreferrer">Live Demo
+                            &rarr;</a>
+                        <a href="https://github.com/fredokaych/portfolio/tree/main/projects/offline-notes"
+                            target="_blank" rel="noopener noreferrer">GitHub &rarr;</a>
                     </div>
-                </article>
+                </div>
 
             </div>
         </section>
+
+        <section class="partners">
+            <h2>Organizations I’ve Worked With</h2>
+
+            <div class="logo-slider">
+                <div class="logo-track">
+                    <!-- Repeat logos twice for seamless looping -->
+                    <img src="images/glory.jpg" alt="Wells Mountain Initiative">
+                    <img src="images/jkuat.png" alt="JKUAT">
+                    <img src="images/un.png" alt="United Nations">
+                    <img src="images/stkevin.jpg" alt="St. Kevin Hill Schools">
+                    <img src="images/malili.jpg" alt="Malili Distributors">
+                    <img src="images/wmi.png" alt="WMI">
+
+                    <!-- Duplicate -->
+                    <img src="images/glory.jpg">
+                    <img src="images/jkuat.png">
+                    <img src="images/un.png">
+                    <img src="images/stkevin.jpg">
+                    <img src="images/malili.jpg">
+                    <img src="images/wmi.png">
+                </div>
+            </div>
+        </section>
+
 
         <!-- CODE PLAYGROUND SECTION -->
         <section id="playground" class="fade-in-section" aria-labelledby="playground-header">
             <div class="section-header">
                 <h2 id="playground-header">Code Playground</h2>
-                <p>Interactive JavaScript demos running in the browser.</p>
+                <p>Interactive JavaScript demos.</p>
             </div>
 
             <div class="grid">
                 <div class="playground-card card playground-interface" role="region" aria-labelledby="palindrome-title">
-                    <div>
-                        <h3 id="palindrome-title">Palindrome Checker</h3>
-                        <p style="margin-bottom: 1rem;">Enter text to check if it reads the same backward.</p>
+                    <h3 id="palindrome-title">Palindrome Checker</h3>
+                    <label for="palInput" class="sr-only">Enter text to check palindrome</label>
+                    <p>Enter a word or phrase below to check if it reads the same backward as forward.</p>
+                    <div class="input-group">
+                        <input type="text" id="palInput" placeholder="Enter a word..." autocomplete="off" />
+                        <button class="run-btn" onclick="checkPalindrome()">Run</button>
                     </div>
-                    <div>
-                        <div class="input-group">
-                            <label for="palInput" class="sr-only">Enter text</label>
-                            <input type="text" id="palInput" placeholder="e.g. racecar" autocomplete="off" />
-                            <button class="run-btn" onclick="checkPalindrome()">Run</button>
-                        </div>
-                        <div id="palResult" class="status-neutral">Waiting for input...</div>
-                    </div>
+                    <div id="palResult" class="status-neutral">Waiting for input...</div>
                 </div>
 
                 <div class="playground-card card" role="region" aria-labelledby="comingsoon-title">
-                    <h3 id="comingsoon-title">More Coming Soon</h3>
-                    <p>Sorting visualizers and DOM games are currently being cooked up. Stay tuned!</p>
+                    <h3 id="comingsoon-title">Coming Soon</h3>
+                    <p>More interactive algorithms and visualizations are being cooked up. Stay tuned!</p>
                 </div>
             </div>
         </section>
@@ -722,26 +890,49 @@
             <div class="contact-links">
                 <!-- Email -->
                 <a href="mailto:fredokaych@gmail.com" class="contact-item" aria-label="Email Me">
-                    <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                        <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+                    <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path
+                            d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
                     </svg>
                 </a>
+
                 <!-- GitHub -->
-                <a href="https://github.com/fredokaych" target="_blank" rel="noopener noreferrer" class="contact-item" aria-label="GitHub">
-                    <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                        <path d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0012 2z" />
+                <a href="https://github.com/fredokaych" target="_blank" rel="noopener noreferrer" class="contact-item"
+                    aria-label="GitHub">
+                    <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path
+                            d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0012 2z" />
                     </svg>
                 </a>
+
                 <!-- LinkedIn -->
-                <a href="https://www.linkedin.com/in/fredokaych/" target="_blank" rel="noopener noreferrer" class="contact-item" aria-label="LinkedIn">
-                    <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                        <path d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8h4V24h-4V8zm7 0h3.78v2.16h.05c.53-1 1.83-2.16 3.77-2.16 4.03 0 4.78 2.65 4.78 6.09V24h-4v-7.77c0-1.85-.03-4.23-2.58-4.23-2.58 0-2.98 2.02-2.98 4.11V24h-4V8z" />
+                <a href="https://www.linkedin.com/in/fredokaych/" target="_blank" rel="noopener noreferrer"
+                    class="contact-item" aria-label="LinkedIn">
+                    <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path
+                            d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8h4V24h-4V8zm7 0h3.78v2.16h.05c.53-1 1.83-2.16 3.77-2.16 4.03 0 4.78 2.65 4.78 6.09V24h-4v-7.77c0-1.85-.03-4.23-2.58-4.23-2.58 0-2.98 2.02-2.98 4.11V24h-4V8z" />
                     </svg>
                 </a>
-                <!-- Twitter/X -->
-                <a href="https://x.com/fredokaych" target="_blank" rel="noopener noreferrer" class="contact-item" aria-label="X / Twitter">
-                    <svg fill="currentColor" viewBox="0 0 16 16" height="18" width="18">
-                        <path d="M12.6 0.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867 -5.07 -4.425 5.07H0.316l5.733 -6.57L0 0.75h5.063l3.495 4.633L12.601 0.75Zm-0.86 13.028h1.36L4.323 2.145H2.865z"/>
+
+                <!-- Twitter -->
+                <a href="https://x.com/fredokaych" target="_blank" rel="noopener noreferrer" class="contact-item"
+                    aria-label="X / Twitter">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16" height="20"
+                        width="20">
+                        <path
+                            d="M12.6 0.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867 -5.07 -4.425 5.07H0.316l5.733 -6.57L0 0.75h5.063l3.495 4.633L12.601 0.75Zm-0.86 13.028h1.36L4.323 2.145H2.865z"
+                            stroke-width="1" />
+                    </svg>
+                </a>
+
+                <!-- Whatsapp -->
+                <a href="https://wa.me/254717905039?text=Hi%20Fred%2C%20I%E2%80%99m%20reaching%20out%20from%20your%20portfolio%20website%21"
+                    target="_blank" rel="noopener noreferrer" class="contact-item" aria-label="WhatsApp">
+                    <svg role="img" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                        height="24" width="24">
+                        <path
+                            d="M17.472 14.382c-0.297 -0.149 -1.758 -0.867 -2.03 -0.967 -0.273 -0.099 -0.471 -0.148 -0.67 0.15 -0.197 0.297 -0.767 0.966 -0.94 1.164 -0.173 0.199 -0.347 0.223 -0.644 0.075 -0.297 -0.15 -1.255 -0.463 -2.39 -1.475 -0.883 -0.788 -1.48 -1.761 -1.653 -2.059 -0.173 -0.297 -0.018 -0.458 0.13 -0.606 0.134 -0.133 0.298 -0.347 0.446 -0.52 0.149 -0.174 0.198 -0.298 0.298 -0.497 0.099 -0.198 0.05 -0.371 -0.025 -0.52 -0.075 -0.149 -0.669 -1.612 -0.916 -2.207 -0.242 -0.579 -0.487 -0.5 -0.669 -0.51 -0.173 -0.008 -0.371 -0.01 -0.57 -0.01 -0.198 0 -0.52 0.074 -0.792 0.372 -0.272 0.297 -1.04 1.016 -1.04 2.479 0 1.462 1.065 2.875 1.213 3.074 0.149 0.198 2.096 3.2 5.077 4.487 0.709 0.306 1.262 0.489 1.694 0.625 0.712 0.227 1.36 0.195 1.871 0.118 0.571 -0.085 1.758 -0.719 2.006 -1.413 0.248 -0.694 0.248 -1.289 0.173 -1.413 -0.074 -0.124 -0.272 -0.198 -0.57 -0.347m-5.421 7.403h-0.004a9.87 9.87 0 0 1 -5.031 -1.378l-0.361 -0.214 -3.741 0.982 0.998 -3.648 -0.235 -0.374a9.86 9.86 0 0 1 -1.51 -5.26c0.001 -5.45 4.436 -9.884 9.888 -9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-0.003 5.45 -4.437 9.884 -9.885 9.884m8.413 -18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 0.16 5.335 0.157 11.892c0 2.096 0.547 4.142 1.588 5.945L0.057 24l6.305 -1.654a11.882 11.882 0 0 0 5.683 1.448h0.005c6.554 0 11.89 -5.335 11.893 -11.893a11.821 11.821 0 0 0 -3.48 -8.413Z"
+                            stroke-width="1" />
                     </svg>
                 </a>
             </div>
@@ -752,7 +943,7 @@
         <p>&copy; <span id="year"></span> Fred Okech. Built with ❤️ and Code.</p>
     </footer>
 
-    <!-- MAIN JAVASCRIPT (MERGED VERSION) -->
+    <!-- Main JS -->
     <script>
         // 1. Mobile Menu Toggle
         const menuToggle = document.getElementById('mobile-menu');
@@ -823,20 +1014,19 @@
             }
         });
 
-        // 5. CANVAS ANIMATION WITH MOUSE INTERACTION (USER'S PREFERRED LOGIC)
-        // Integrated into the modern layout structure
+        // 5. CANVAS ANIMATION WITH MOUSE INTERACTION
         const canvas = document.getElementById('canvas-bg');
         const ctx = canvas.getContext('2d');
         let particlesArray;
-        
+
         // Mouse Object for Interaction
-        let mouse = { 
-            x: null, 
-            y: null, 
+        let mouse = {
+            x: null,
+            y: null,
             radius: 100 // Interaction radius
         };
 
-        // Resize Canvas to fit the Hero Section (not full window)
+        // Resize Canvas to fit the Hero Section
         function resizeCanvas() {
             const heroSection = document.getElementById('hero');
             canvas.width = window.innerWidth;
@@ -849,8 +1039,8 @@
             mouse.x = event.x;
             mouse.y = event.y;
         });
-        
-        // Handle Mouse Leaving Window (Optional: stops interaction when mouse leaves)
+
+        // Handle Mouse Leaving Window
         window.addEventListener('mouseout', () => {
             mouse.x = undefined;
             mouse.y = undefined;
@@ -867,57 +1057,56 @@
                 this.size = size;
                 this.color = color;
             }
-            
-            // Draw particle
+
             draw() {
                 ctx.beginPath();
                 ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2, false);
                 ctx.fillStyle = this.color;
                 ctx.fill();
             }
-            
-            // Update particle position
+
             update() {
                 // Move particle
                 this.x += this.directionX;
                 this.y += this.directionY;
 
-                // Bounce off edges properly, considering particle size
+                // Bounce off edges
                 if (this.x + this.size > canvas.width) {
                     this.x = canvas.width - this.size;
                     this.directionX = -this.directionX;
+                    this.baseDirectionX = -this.baseDirectionX;
                 }
                 if (this.x - this.size < 0) {
                     this.x = this.size;
                     this.directionX = -this.directionX;
+                    this.baseDirectionX = -this.baseDirectionX;
                 }
-
                 if (this.y + this.size > canvas.height) {
                     this.y = canvas.height - this.size;
                     this.directionY = -this.directionY;
+                    this.baseDirectionY = -this.baseDirectionY;
                 }
                 if (this.y - this.size < 0) {
                     this.y = this.size;
                     this.directionY = -this.directionY;
+                    this.baseDirectionY = -this.baseDirectionY;
                 }
 
-                // --- MOUSE INTERACTION LOGIC (From User's Code) ---
+                // Mouse Interaction (Repulsion)
                 let dx = mouse.x - this.x;
                 let dy = mouse.y - this.y;
                 let distance = Math.sqrt(dx * dx + dy * dy);
 
                 if (distance < mouse.radius + this.size) {
-                    // Move particle away from mouse (Repulsion)
                     let angle = Math.atan2(dy, dx);
                     let force = (mouse.radius - distance) / mouse.radius;
                     this.directionX -= force * Math.cos(angle) * 0.5;
                     this.directionY -= force * Math.sin(angle) * 0.5;
                 }
 
-                // Slow particles back to original speed (Damping/Spring effect)
+                // Damping/Spring effect
                 this.directionX += (this.baseDirectionX - this.directionX) * 0.05;
                 this.directionY += (this.baseDirectionY - this.directionY) * 0.05;
-                // -----------------------------------------------------
 
                 this.draw();
             }
@@ -925,32 +1114,28 @@
 
         function initParticles() {
             particlesArray = [];
-            // Calculate number of particles based on canvas size
-            // Adjusted density slightly to match cleaner aesthetic
             let numberOfParticles = (canvas.height * canvas.width) / 11000;
-            
+
             for (let i = 0; i < numberOfParticles; i++) {
                 let size = (Math.random() * 2) + 1;
                 let x = (Math.random() * ((canvas.width - size * 2) - (size * 2)) + size * 2);
                 let y = (Math.random() * ((canvas.height - size * 2) - (size * 2)) + size * 2);
                 let directionX = (Math.random() * 0.4) - 0.2;
                 let directionY = (Math.random() * 0.4) - 0.2;
-                let color = '#3b82f6'; // Blue accent
+                let color = '#3b82f6';
 
                 particlesArray.push(new Particle(x, y, directionX, directionY, size, color));
             }
         }
 
-        // Connect particles with lines
         function connect() {
             let opacityValue = 1;
             for (let a = 0; a < particlesArray.length; a++) {
                 for (let b = a; b < particlesArray.length; b++) {
                     let distance = ((particlesArray[a].x - particlesArray[b].x) * (particlesArray[a].x - particlesArray[b].x))
                         + ((particlesArray[a].y - particlesArray[b].y) * (particlesArray[a].y - particlesArray[b].y));
-                    
-                    // Optimized distance check for lines to keep it clean
-                    if (distance < (canvas.width/7) * (canvas.height/7)) {
+
+                    if (distance < (canvas.width / 7) * (canvas.height / 7)) {
                         opacityValue = 1 - (distance / 20000);
                         ctx.strokeStyle = 'rgba(59, 130, 246,' + opacityValue + ')';
                         ctx.lineWidth = 1;
@@ -965,15 +1150,14 @@
 
         function animate() {
             requestAnimationFrame(animate);
-            ctx.clearRect(0, 0, innerWidth, innerHeight); // Clear full canvas
-            
+            ctx.clearRect(0, 0, innerWidth, innerHeight);
+
             for (let i = 0; i < particlesArray.length; i++) {
                 particlesArray[i].update();
             }
             connect();
         }
 
-        // Handle Window Resize
         window.addEventListener('resize', () => {
             resizeCanvas();
         });
@@ -981,7 +1165,8 @@
         // Initialize Animation
         resizeCanvas();
         animate();
-
     </script>
+
 </body>
+
 </html>

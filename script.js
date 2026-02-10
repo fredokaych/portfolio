@@ -185,7 +185,7 @@ function initParticles() {
         let y = (Math.random() * ((canvas.height - size * 2) - (size * 2)) + size * 2);
         let directionX = (Math.random() * 0.4) - 0.2;
         let directionY = (Math.random() * 0.4) - 0.2;
-        let color = '#3b82f6'; // Blue accent
+        let color = '#16a34a'; // Blue accent
 
         particlesArray.push(new Particle(x, y, directionX, directionY, size, color));
     }
@@ -202,7 +202,7 @@ function connect() {
             // Optimized distance check for lines to keep it clean
             if (distance < (canvas.width / 7) * (canvas.height / 7)) {
                 opacityValue = 1 - (distance / 20000);
-                ctx.strokeStyle = 'rgba(59, 130, 246,' + opacityValue + ')';
+                ctx.strokeStyle = 'rgba(22, 163, 74,' + opacityValue + ')';
                 ctx.lineWidth = 1;
                 ctx.beginPath();
                 ctx.moveTo(particlesArray[a].x, particlesArray[a].y);
