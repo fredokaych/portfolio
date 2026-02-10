@@ -618,7 +618,7 @@ footer {
     transition: all 0.3s ease;
 } */
 .logo-container img {
-    width: clamp(110px, 18vw, 180px);
+    width: clamp(110px, 18vw, 160px);
     height: auto;
     filter: grayscale(0%);
     opacity: 0.75;
